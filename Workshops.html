@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flora - Workshops</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img src="images/Flora_logo.png" alt="Flora Logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="Workshops.html" aria-current="page">Workshops</a></li>
+                    <li><a href="Member_Dashboard.html">Member Dashboard</a></li>
+                    <li><a href="Manager_Dashboard.html">Manager Dashboard</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+
+            <!--*************************************Hero**********************************************************************-->
+
+            <section class="hero hero-compact">
+                <div class="hero-inner">
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Workshops.html" aria-current="page">Workshops</a></li>
+                        </ol>
+                    </nav>
+                    <div class="hero-text">
+                        <h1>Workshops</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!--*************************************Sort-Control**********************************************************************-->
+
+            <div class="sort-bar">
+                <label class="sort-label" for="sort">Sort By</label>
+
+                <select id="sort" name="sort">
+                    <option value="">Select...</option>
+                    <optgroup label="Price">
+                        <option value="price-asc">Low to High</option>
+                        <option value="price-desc">High to Low</option>
+                    </optgroup>
+                    <optgroup label="Name">
+                        <option value="name-asc">A&ndash;Z</option>
+                        <option value="name-desc">Z&ndash;A</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <!--*************************************Workshops**********************************************************************-->
+
+            <section class="workshop-grid" aria-label="All workshops">
+
+                <article class="workshop-card">
+                    <img class="pos-bouquet" src="images/my_first_bouquet.jpg" width="400" height="240" alt="My First Bouquet workshop">
+                    <div class="card-body">
+                        <h2>My First Bouquet</h2>
+                        <p>New to arranging? Learn the basics step by step and be ready to create your very first arrangement.</p>
+                        <div class="card-footer">
+                            <p class="price">150.00 SAR</p>
+                            <a class="join-btn" href="Join_Workshop.html">Join</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card">
+                    <img class="pos-family" src="images/family_in_bloom.jpg" width="400" height="240" alt="Family in Bloom workshop">
+                    <div class="card-body">
+                        <h2>Family in Bloom</h2>
+                        <p>A fun family experience where parents and children work together to create floral arrangements to take home.</p>
+                        <div class="card-footer">
+                            <p class="price">350.00 SAR</p>
+                            <a class="join-btn" href="Join_Workshop.html">Join</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card">
+                    <img class="pos-pressed" src="images/pressed_and_framed.jpg" width="400" height="240" alt="Pressed &amp; Framed workshop">
+                    <div class="card-body">
+                        <h2>Pressed &amp; Framed</h2>
+                        <p>Learn how to dry and preserve fresh flowers, then press and frame them under glass as lasting wall art.</p>
+                        <div class="card-footer">
+                            <p class="price">320.00 SAR</p>
+                            <a class="join-btn" href="Join_Workshop.html">Join</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card">
+                    <img class="pos-bridal" src="images/bridal_blossom.jpg" width="400" height="240" alt="Bridal Blossom workshop">
+                    <div class="card-body">
+                        <h2>Bridal Blossom</h2>
+                        <p>A celebration for the bride-to-be and her friends, creating soft, romantic arrangements for the big day.</p>
+                        <div class="card-footer">
+                            <p class="price">550.00 SAR</p>
+                            <a class="join-btn" href="Join_Workshop.html">Join</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card">
+                    <img class="pos-storytelling" src="images/flower_storytelling.jpg" width="400" height="240" alt="Flower Storytelling workshop">
+                    <div class="card-body">
+                        <h2>Flower Storytelling</h2>
+                        <p>Create a bouquet that represents a memory, message, or story, then give your creation a meaningful title.</p>
+                        <div class="card-footer">
+                            <p class="price">180.00 SAR</p>
+                            <a class="join-btn" href="Join_Workshop.html">Join</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card">
+                    <img class="pos-garden" src="images/garden_to_vase.jpg" width="400" height="240" alt="From Garden to Vase workshop">
+                    <div class="card-body">
+                        <h2>From Garden to Vase</h2>
+                        <p>Learn how to choose, trim, prepare, and arrange fresh flowers while discovering how to keep them fresh for longer.</p>
+                        <div class="card-footer">
+                            <p class="price">220.00 SAR</p>
+                            <a class="join-btn" href="Join_Workshop.html">Join</a>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </body>
+</html>
