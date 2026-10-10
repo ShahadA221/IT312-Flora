@@ -164,14 +164,15 @@ html, body {
 
 /*===================================================================================================================================================================================alya*/
 
-/*---------------------------------------- Alya's pages: Workshops / Member Dashboard ----------------------------------------*/
+------------------------------------------- Alya's pages: Workshops / Member Dashboard -------------------------------------------alya*/
+
 
 /*---------------------------------------------------------colors---------------------alya*/
 
 :root {
     --olive: #616247;
     --olive-dark: #333322;
-    --peach: #f7d5c1;
+    --peach: #ffc2d1;
     --brown: #4b1407;
     --line: #dccbbd;
     --pending: #8a6100;
@@ -199,7 +200,7 @@ html, body {
 /*----------------------------------------------------------Hero----------------------------alya*/
 
 .hero {
-    background: linear-gradient(135deg, #fbe3d3 0%, #f7d5c1 55%, #f0c4ad 100%);
+    background: linear-gradient(135deg, #ffe3ea 0%, #ffc2d1 55%, #f5aebf 100%);
     color: var(--brown);
     border-radius: 0 0 48px 48px;
     padding: 20px 24px 64px;}
@@ -347,7 +348,7 @@ html, body {
     color: var(--brown);
     font-weight: 700;}
 
-.requests tbody tr:hover { background: #fdf3ec; }
+.requests tbody tr:hover { background: #ffeef2; }
 
 .status {
     display: inline-block;
@@ -392,7 +393,7 @@ html, body {
     justify-content: center;
     gap: 40px 32px;
     padding: 48px max(24px, calc((100% - 1000px) / 2));
-    background-color: #f7d5c1;}
+    background-color: var(--peach);}
 
 .workshop-card {
     flex: 0 1 calc((100% - 64px) / 3);
