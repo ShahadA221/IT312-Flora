@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flora - Member Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img src="images/Flora_logo.png" alt="Flora Logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Workshops.html">Workshops</a></li>
+                    <li><a class="active" href="Member_Dashboard.html" aria-current="page">Member Dashboard</a></li>
+                    <li><a href="Manager_Dashboard.html">Manager Dashboard</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+
+            <!--*************************************Hero**********************************************************************-->
+
+            <section class="hero hero-flowers">
+                <div class="hero-inner">
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Member_Dashboard.html" aria-current="page">Member Dashboard</a></li>
+                        </ol>
+                    </nav>
+                    <div class="hero-text">
+                        <h1>Member Dashboard</h1>
+                        <p>Keep track of your workshop requests, past sessions, and feedback.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--*************************************Member-Actions**********************************************************************-->
+
+            <section class="actions" aria-label="Member actions">
+                <a class="action-card" href="Join_Workshop.html">
+                    <span class="action-icon" aria-hidden="true">+</span>
+                    Join a Workshop
+                </a>
+                <a class="action-card" href="Rate_Workshops.html">
+                    <span class="action-icon" aria-hidden="true">&#9733;</span>
+                    Rate Workshops
+                </a>
+            </section>
+
+            <!--*************************************Previous-Requests**********************************************************************-->
+
+            <section class="requests">
+                <h2>Previous Participation Requests</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Workshop Name</th>
+                                <th scope="col">Request Date</th>
+                                <th scope="col">Cost</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pressed &amp; Framed</td>
+                                <td>15-11-2026</td>
+                                <td>320.00 SAR</td>
+                                <td><span class="status status-pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>My First Bouquet</td>
+                                <td>18-10-2026</td>
+                                <td>150.00 SAR</td>
+                                <td><span class="status status-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Bridal Blossom</td>
+                                <td>05-09-2026</td>
+                                <td>550.00 SAR</td>
+                                <td><span class="status status-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Flower Storytelling</td>
+                                <td>02-09-2026</td>
+                                <td>180.00 SAR</td>
+                                <td><span class="status status-declined">Declined</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
