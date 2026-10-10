@@ -1,0 +1,222 @@
+/*---------------------------------------------------------header---------------------shahad*/
+header {
+    background-color: #fcfbf7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: space-between ;}
+
+header div {
+    display: flex;
+    padding-right: 3em ;
+    align-items: center;
+    justify-content: space-between;}
+
+header div img {
+    height: 79px;
+    width: auto;}
+
+header div ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;}
+
+header div ul li a {
+    text-decoration: none;
+    color: #616247;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+header div ul li a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #333322;}
+
+header div a.active{
+    font-weight: bold;
+    border-bottom: 2px solid #333322;}
+
+/*--------------------------------------------------------------body---------------------shahad*/
+body {
+    padding-top: 71px; }
+
+* {
+    box-sizing: border-box; 
+    margin: 0;              
+    padding: 0;}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;}
+
+/*----------------------------------------------------------Intro----------------------------shahad*/
+
+#Intro {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+    
+    background-image: 
+        linear-gradient(
+            to right, 
+            rgba(219, 145, 127, 0.85) 0%,   
+            rgba(194, 88, 65, 0.45) 45%, 
+            rgba(255, 255, 255, 0) 80%     
+        ),
+        url('background_img3.jpeg'); 
+
+    background-position: right center; 
+    background-repeat: repeat-x;        
+    background-size: auto 100%;        
+
+    display: flex;
+    align-items: center;               
+    justify-content: flex-start;       
+    padding: 0 4%;}
+
+.hero-content {
+    max-width: 550px;                  
+    display: flex;
+    flex-direction: column;            
+    gap: 20px;                         
+    color: #4b1407;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+#Intro h1 {
+    font-size: 5rem;                  
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;}
+
+#Intro h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;}
+
+#Intro p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;}
+
+
+/*---------------------------------------------------------------------Workshops---------------------shahad*/
+
+#Workshops {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #f7d5c1}
+
+#Workshops h2 {
+    font-size: 2.2rem;
+    color: #4b1407;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;}
+
+#Workshops {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;}
+
+#Workshops h2 {
+    width: 100%;}
+
+#Workshops article {
+    padding: 15px;
+    width: 250px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px;
+    position: relative;
+    background-color: #ffffff;
+    text-align: left;        
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+#Workshops article img[alt*="img"] {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(207, 241, 230);
+    object-fit: cover;}
+
+#Workshops article .btn-img,
+#Workshops article input[type="image"] {
+    align-self: flex-end; 
+    width: 35px;         
+    height: auto;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;}
+
+.workshop-card-link {
+    text-decoration: none; 
+    color: inherit;       
+    display: block;      }
+
+
+/*---------------------------------------------------------------------Flower-Of-The-Month---------------------shahad*/
+
+/* ==========================================
+   Flower Of The Month Section Styling
+   ========================================== */
+#Flower-Of-The-Month {
+    background-color: #f7d5c1;          /* نفس لون خلفية الورش أو اختيار لون دافئ متناسق */
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 700px;                   /* تحديد عرض كارت القسم ليكون متناسقاً بالمنتصف */
+    border-radius: 12px;
+    
+    display: flex;                      /* تفعيل نظام Flexbox */
+    flex-direction: column;             /* ترتيب العناصر بشكل رأسي من الأعلى للأسفل[cite: 5] */
+    align-items: center;                /* توسيط جميع العناصر أفقياً[cite: 5] */
+    text-align: center;                 /* توسيط النصوص[cite: 5] */
+    gap: 15px;                          /* المسافة بين العنوان والفقرة والرابط والصورة */
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* عنوان القسم h2 */
+#Flower-Of-The-Month h2 {
+    font-size: 2.2rem;
+    color: #4b1407;
+    margin: 0;
+}
+
+/* النص الوصفي p */
+#Flower-Of-The-Month p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+/* زر / رابط الضغط Click here */
+#Flower-Of-The-Month .flower-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #4b1407;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#Flower-Of-The-Month .flower-btn:hover {
+    background-color: #6f1c1c;
+    transform: translateY(-2px);
+}
+
+/* صورة زهرة الشهر */
+#Flower-Of-The-Month .flower-img {
+    width: 100%;
+    max-width: 350px;                   /* حجم مناسب للصورة داخل الحاوية */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
