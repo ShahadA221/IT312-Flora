@@ -65,7 +65,7 @@ html, body {
             rgba(194, 88, 65, 0.45) 45%, 
             rgba(255, 255, 255, 0) 80%     
         ),
-        url('background_img3.jpeg'); 
+        url('photos/background_img3.jpeg'); 
 
     background-position: right center; 
     background-repeat: repeat-x;        
