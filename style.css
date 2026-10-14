@@ -497,3 +497,341 @@ html, body {
     .workshop-card { flex-basis: 100%; }}
  
 /*-------------------------------------------------------------------------------------------------------------alya*/
+
+
+
+/*======================================================================================================================================================================================tala*/
+
+/*==================== Shared Styles for Both Pages — tala ====================*/
+
+/*------------------------------------------------shared-text---------------------tala*/
+
+.manager-page,
+.team-page {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333322;
+    line-height: 1.5;
+    padding-top: 16px;
+}
+
+.manager-page h1,
+.manager-page h2,
+.team-page h1,
+.team-page h2 {
+    color: #4b1407;
+}
+
+/*------------------------------------------------breadcrumb---------------------tala*/
+
+.manager-page .breadcrumb,
+.team-page .breadcrumb {
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.manager-page .breadcrumb a,
+.team-page .breadcrumb a {
+    color: #616247;
+    font-weight: bold;
+}
+
+.manager-page .breadcrumb span,
+.team-page .breadcrumb span {
+    color: #333322;
+}
+
+/*==================== PAGE 1: Manager Dashboard — tala ====================*/
+
+/*------------------------------------------------Manager-Hero---------------------tala*/
+
+.manager-page .manager-dashboard {
+    background-color: #f7d5c1;
+    padding: 20px 24px 64px;
+    text-align: center;
+}
+
+.manager-page .manager-dashboard h1 {
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+}
+
+.manager-page .manager-dashboard p {
+    font-size: 1.2rem;
+}
+
+/*------------------------------------------------Manager-Actions---------------------tala*/
+
+.manager-page .manager-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    max-width: 820px;
+    margin: 48px auto 0;
+    padding: 0 24px;
+}
+
+.manager-page .manager-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 280px;
+    flex-grow: 1;
+    gap: 8px;
+    padding: 20px;
+    border: 1px solid #dccbbd;
+    background-color: #ffffff;
+    color: #4b1407;
+    text-decoration: none;
+    text-align: center;
+}
+
+.manager-page .manager-card h2 {
+    font-size: 1.25rem;
+}
+
+.manager-page .manager-card p {
+    font-size: 0.9rem;
+    color: #333322;
+}
+
+.manager-page .manager-icon {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #4b1407;
+}
+
+.manager-page .manager-card img {
+    display: block;
+    width: 48px;
+    height: auto;
+}
+
+.manager-page .manager-card:hover {
+    background-color: #f7d5c1;
+    border-color: #616247;
+}
+
+/*------------------------------------------------My-Workshops---------------------tala*/
+
+.manager-page .my-workshops {
+    max-width: 820px;
+    margin: 56px auto 64px;
+    padding: 0 24px;
+}
+
+.manager-page .my-workshops h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+}
+
+.manager-page .my-workshops table {
+    width: 100%;
+    border: 1px solid #dccbbd;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.manager-page .my-workshops th {
+    padding: 12px 14px;
+    background-color: #f7d5c1;
+    color: #4b1407;
+}
+
+.manager-page .my-workshops td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #dccbbd;
+    font-weight: bold;
+}
+
+.manager-page .my-workshops td:first-child {
+    width: 108px;
+}
+
+.manager-page .my-workshops img {
+    display: block;
+    width: 80px;
+    height: auto;
+}
+
+.manager-page .my-workshops tbody tr:hover {
+    background-color: #fdf3ec;
+}
+
+/*==================== PAGE 2: Manage Activity Leaders & Instructors — tala ====================*/
+
+/*------------------------------------------------Manage-Team-Hero---------------------tala*/
+
+.team-page .manage-team {
+    padding: 20px 24px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.team-page .manage-team h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.team-page .manage-team p {
+    font-size: 1rem;
+}
+
+/*------------------------------------------------Current-Instructors---------------------tala*/
+
+.team-page .current-team {
+    max-width: 820px;
+    margin: 32px auto 64px;
+    padding: 24px;
+    background-color: #fdf3ec;
+}
+
+.team-page .current-team h2 {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.team-page .current-team table {
+    width: 100%;
+    border: 1px solid #dccbbd;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.team-page .current-team th {
+    padding: 10px 14px;
+    background-color: #f7d5c1;
+    color: #4b1407;
+}
+
+.team-page .current-team td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #dccbbd;
+}
+
+.team-page .current-team img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+.team-page .current-team label {
+    font-weight: bold;
+}
+
+.team-page .current-team tbody tr:hover {
+    background-color: #fdf3ec;
+}
+
+/*------------------------------------------------Add-Leader-Instructor---------------------tala*/
+
+.team-page .add-team-member {
+    max-width: 820px;
+    margin: 0 auto 64px;
+    padding: 0 24px;
+}
+
+.team-page .add-team-member h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.team-page .add-team-member p {
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+}
+
+.team-page .add-team-member form {
+    padding: 24px;
+    background-color: #fdf3ec;
+}
+
+.team-page .form-columns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.team-page .form-column {
+    flex-basis: 260px;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.team-page .form-field {
+    margin-bottom: 24px;
+}
+
+.team-page .form-field label {
+    display: block;
+    font-weight: bold;
+    color: #4b1407;
+    margin-bottom: 6px;
+}
+
+.team-page .form-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #616247;
+    background-color: #ffffff;
+    color: #333322;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.team-page .form-field input[type="file"] {
+    padding: 24px 10px;
+    border: 1px dashed #616247;
+}
+
+.team-page .add-team-member fieldset {
+    border: 1px solid #616247;
+    padding: 14px;
+    margin-bottom: 24px;
+}
+
+.team-page .add-team-member legend {
+    padding: 0 6px;
+    color: #4b1407;
+    font-weight: bold;
+}
+
+.team-page .add-team-member fieldset div {
+    margin-bottom: 8px;
+}
+
+.team-page .add-team-member fieldset input {
+    margin-right: 8px;
+}
+
+/*------------------------------------------------Manage-Team-Buttons---------------------tala*/
+
+.team-page .current-team button,
+.team-page .add-team-member button {
+    padding: 10px 20px;
+    border: 1px solid #616247;
+    background-color: #616247;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.team-page .current-team button {
+    margin-top: 16px;
+}
+
+.team-page .current-team button:hover,
+.team-page .add-team-member button:hover {
+    background-color: #333322;
+}
+
+/*--------------------------------------------------------------------------tala*/
