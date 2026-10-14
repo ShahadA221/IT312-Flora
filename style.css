@@ -164,109 +164,95 @@ html, body {
 
 /*===================================================================================================================================================================================alya*/
 
+
 /*---------------------------------------- Alya's pages: Workshops / Member Dashboard ----------------------------------------*/
-
+ 
 /*---------------------------------------------------------colors---------------------alya*/
-
-:root {
-    --olive: #616247;
-    --olive-dark: #333322;
-    --peach: #f7d5c1;
-    --brown: #4b1407;
-    --line: #dccbbd;
-    --pending: #8a6100;
-    --pending-bg: #fbefc9;
-    --done: #1f5c3a;
-    --done-bg: #d8efdf;
-    --declined: #8c2a2a;
-    --declined-bg: #f6d9d9;
-    --font: Georgia, 'Times New Roman', Times, serif;
-}
-
+ 
 /*---------------------------------------------------------shared-text---------------------alya*/
-
+ 
 .hero, .actions, .requests, .sort-bar, .workshop-grid, .placeholder {
-    font-family: var(--font);
-    color: var(--olive-dark);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333322;
     line-height: 1.5;}
-
+ 
 .hero a, .action-card, .join-btn { color: inherit; }
-
+ 
 .hero h1, .requests h2, .card-body h2 {
-    font-family: var(--font);
-    color: var(--brown);}
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4b1407;}
+ 
 /*----------------------------------------------------------Hero----------------------------alya*/
-
+ 
 .hero {
     background: linear-gradient(135deg, #fbe3d3 0%, #f7d5c1 55%, #f0c4ad 100%);
-    color: var(--brown);
+    color: #4b1407;
     border-radius: 0 0 48px 48px;
     padding: 20px 24px 64px;}
-
+ 
 .hero-compact { padding-bottom: 40px; }
-
+ 
 .hero-inner {
     max-width: 1100px;
     margin: 0 auto;}
-
+ 
 .hero .breadcrumb { font-size: 0.9rem; }
-
+ 
 .hero .breadcrumb ol {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     list-style: none;}
-
+ 
 .hero .breadcrumb li + li::before {
     content: "\25B8";
     margin-right: 8px;}
-
+ 
 .hero .breadcrumb a { font-weight: bold; }
-
+ 
 .hero-text {
     text-align: center;
     margin-top: 36px;}
-
+ 
 .hero-compact .hero-text { margin-top: 12px; }
-
+ 
 .hero-text h1 {
     margin: 0 0 8px;
     font-size: clamp(2.6rem, 6vw, 4rem);
     font-weight: 800;
     line-height: 1.1;}
-
+ 
 .hero-text p {
     margin: 0;
     font-size: 1.2rem;
     font-weight: 500;}
-
+ 
 /*---------------------------------------------------------Hero-Flowers-(Member-Dashboard)---------------------alya*/
-
+ 
 .hero-flowers {
     position: relative;
     overflow: hidden;
-    background: var(--peach);}
-
+    background: #f7d5c1;}
+ 
 .hero-flowers::before {
     content: "";
     position: absolute;
     inset: -24px;
     background: url("photos/hero_flowers.jpg") center / cover no-repeat;
     filter: blur(6px);}
-
+ 
 .hero-flowers::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(255, 255, 255, 0.55);}
-
+ 
 .hero-flowers .hero-inner {
     position: relative;
     z-index: 1;}
-
+ 
 /*---------------------------------------------------------Member-Actions---------------------alya*/
-
+ 
 .actions {
     display: flex;
     justify-content: center;
@@ -275,7 +261,7 @@ html, body {
     max-width: 820px;
     margin: 48px auto 0;
     padding: 0 24px;}
-
+ 
 .action-card {
     flex: 1 1 280px;
     display: flex;
@@ -285,22 +271,22 @@ html, body {
     gap: 8px;
     min-height: 130px;
     padding: 20px;
-    border: 1px solid var(--line);
+    border: 1px solid #dccbbd;
     border-radius: 28px;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--brown);
+    color: #4b1407;
     background: #fff;
     box-shadow: 0 4px 14px rgba(75, 20, 7, 0.1);
     transition: background 0.2s, border-color 0.2s, transform 0.25s, box-shadow 0.25s;}
-
+ 
 .action-card:hover {
-    background: var(--peach);
-    border-color: var(--olive);
+    background: #f7d5c1;
+    border-color: #616247;
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(75, 20, 7, 0.18);}
-
+ 
 .action-icon {
     display: flex;
     align-items: center;
@@ -308,47 +294,47 @@ html, body {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: var(--peach);
-    color: var(--brown);
+    background: #f7d5c1;
+    color: #4b1407;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 1;}
-
+ 
 /* the "+" glyph is naturally smaller than the star, so enlarge it */
 .action-card:first-child .action-icon { font-size: 3rem; }
-
+ 
 /*---------------------------------------------------------Previous-Requests---------------------alya*/
-
+ 
 .requests {
     max-width: 820px;
     margin: 56px auto 64px;
     padding: 0 24px;}
-
+ 
 .requests h2 {
     font-size: 1.8rem;
     margin: 0 0 14px;}
-
+ 
 .table-wrap { overflow-x: auto; }
-
+ 
 .requests table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    border: 1px solid var(--line);}
-
+    border: 1px solid #dccbbd;}
+ 
 .requests th,
 .requests td {
     padding: 12px 14px;
-    border: 1px solid var(--line);}
-
+    border: 1px solid #dccbbd;}
+ 
 .requests thead th {
-    background: var(--peach);
-    color: var(--brown);
+    background: #f7d5c1;
+    color: #4b1407;
     font-weight: 700;}
-
+ 
 .requests tbody tr:hover { background: #fdf3ec; }
-
+ 
 .status {
     display: inline-block;
     min-width: 96px;
@@ -356,13 +342,13 @@ html, body {
     border-radius: 999px;
     font-size: 0.9rem;
     font-weight: 600;}
-
-.status-pending   { color: var(--pending);  background: var(--pending-bg); }
-.status-completed { color: var(--done);     background: var(--done-bg); }
-.status-declined  { color: var(--declined); background: var(--declined-bg); }
-
+ 
+.status-pending   { color: #8a6100;  background: #fbefc9; }
+.status-completed { color: #1f5c3a;  background: #d8efdf; }
+.status-declined  { color: #8c2a2a;  background: #f6d9d9; }
+ 
 /*---------------------------------------------------------------------Workshops-page---------------------alya*/
-
+ 
 .sort-bar {
     display: flex;
     align-items: center;
@@ -371,21 +357,21 @@ html, body {
     max-width: 1000px;
     margin: 32px auto;
     padding: 0 24px;}
-
+ 
 .sort-label {
     font-weight: bold;
     font-size: 1.05rem;
-    color: var(--brown);}
-
+    color: #4b1407;}
+ 
 .sort-bar select {
     padding: 8px 18px;
     font: inherit;
-    color: var(--olive-dark);
-    border: 2px solid var(--olive);
+    color: #333322;
+    border: 2px solid #616247;
     border-radius: 999px;
     background: #fff;
     cursor: pointer;}
-
+ 
 .workshop-grid {
     display: flex;
     flex-wrap: wrap;
@@ -393,7 +379,7 @@ html, body {
     gap: 40px 32px;
     padding: 48px max(24px, calc((100% - 1000px) / 2));
     background-color: #f7d5c1;}
-
+ 
 .workshop-card {
     flex: 0 1 calc((100% - 64px) / 3);
     display: flex;
@@ -403,11 +389,11 @@ html, body {
     background: #ffffff;
     box-shadow: 0 4px 14px rgba(75, 20, 7, 0.15);
     transition: transform 0.25s ease, box-shadow 0.25s ease;}
-
+ 
 .workshop-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 26px rgba(75, 20, 7, 0.25);}
-
+ 
 .workshop-card img {
     display: block;
     width: 100%;
@@ -415,54 +401,54 @@ html, body {
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center 50%;}
-
+ 
 .card-body {
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 16px;}
-
+ 
 .card-body h2 {
     margin: 0 0 8px;
     font-size: 1.45rem;
     line-height: 1.2;}
-
+ 
 .card-body p {
     margin: 0 0 16px;
     font-size: 0.9rem;
     flex: 1;}
-
+ 
 .card-footer {
-    border-top: 1px solid var(--line);
+    border-top: 1px solid #dccbbd;
     padding-top: 12px;
     text-align: center;}
-
+ 
 .price {
     margin: 0 0 12px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--olive);}
-
+    color: #616247;}
+ 
 .join-btn {
     display: block;
     padding: 9px;
-    background: var(--peach);
-    color: var(--brown);
+    background: #f7d5c1;
+    color: #4b1407;
     border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
     transition: background 0.2s, color 0.2s;}
-
+ 
 .join-btn::after {
     content: " \2192";
     display: inline-block;
     transition: transform 0.2s;}
-
-.join-btn:hover { background: var(--olive); color: #fff; }
-
+ 
+.join-btn:hover { background: #616247; color: #fff; }
+ 
 .join-btn:hover::after { transform: translateX(4px); }
-
+ 
 /* photo positions (one rule per workshop image) */
 .workshop-card img.pos-bouquet      { object-position: center 30%; }
 .workshop-card img.pos-family       { object-position: center 14%; }
@@ -470,9 +456,9 @@ html, body {
 .workshop-card img.pos-bridal       { object-position: center 54%; }
 .workshop-card img.pos-storytelling { object-position: center 57%; }
 .workshop-card img.pos-garden       { object-position: center 40%; }
-
+ 
 /*---------------------------------------------------------------------placeholder-pages---------------------alya*/
-
+ 
 .placeholder {
     max-width: 420px;
     margin: 80px auto;
@@ -482,32 +468,32 @@ html, body {
     flex-direction: column;
     gap: 20px;
     font-size: 1.2rem;}
-
+ 
 /*---------------------------------------------------------------------animation---------------------alya*/
-
+ 
 @keyframes rise {
     from { opacity: 0; transform: translateY(18px); }
     to   { opacity: 1; transform: none; }}
-
+ 
 .workshop-card, .action-card { animation: rise 0.6s ease backwards; }
-
+ 
 .workshop-card:nth-child(2) { animation-delay: 0.08s; }
 .workshop-card:nth-child(3) { animation-delay: 0.16s; }
 .workshop-card:nth-child(4) { animation-delay: 0.24s; }
 .workshop-card:nth-child(5) { animation-delay: 0.32s; }
 .workshop-card:nth-child(6) { animation-delay: 0.40s; }
 .action-card:nth-child(2)   { animation-delay: 0.1s; }
-
+ 
 @media (prefers-reduced-motion: reduce) {
     .workshop-card, .action-card { animation: none; transition: none; }
     .workshop-card:hover, .action-card:hover { transform: none; }}
-
+ 
 /*---------------------------------------------------------------------small-screens---------------------alya*/
-
+ 
 @media (max-width: 860px) {
     .workshop-card { flex-basis: calc((100% - 32px) / 2); }}
-
+ 
 @media (max-width: 560px) {
     .workshop-card { flex-basis: 100%; }}
-
+ 
 /*-------------------------------------------------------------------------------------------------------------alya*/
