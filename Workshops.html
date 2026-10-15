@@ -41,17 +41,21 @@
             <!--*************************************Sort-Control**********************************************************************-->
 
             <div class="sort-bar">
-                <label class="sort-label" for="sort">Sort By</label>
+                <span class="sort-label">Sort By</span>
 
-                <select id="sort" name="sort">
-                    <option value="">Select...</option>
-                    <optgroup label="Price">
-                        <option value="price-asc">Low to High</option>
-                        <option value="price-desc">High to Low</option>
-                    </optgroup>
+                <select id="sort-name" name="sort-name" aria-label="Sort by name">
+                    <option value="">Name</option>
                     <optgroup label="Name">
                         <option value="name-asc">A&ndash;Z</option>
                         <option value="name-desc">Z&ndash;A</option>
+                    </optgroup>
+                </select>
+
+                <select id="sort-price" name="sort-price" aria-label="Sort by price">
+                    <option value="">Price</option>
+                    <optgroup label="Price">
+                        <option value="price-asc">Low to High</option>
+                        <option value="price-desc">High to Low</option>
                     </optgroup>
                 </select>
             </div>
