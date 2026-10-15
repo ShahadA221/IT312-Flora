@@ -185,7 +185,7 @@ html, body {
 /*----------------------------------------------------------Hero----------------------------alya*/
  
 .hero {
-    background: linear-gradient(135deg, #ffe3ea 0%, #ffc2d1 55%, #f5aebf 100%);
+    background: linear-gradient(135deg, #fbe3d3 0%, #f7d5c1 55%, #f0c4ad 100%);
     color: #4b1407;
     border-radius: 0 0 48px 48px;
     padding: 20px 24px 64px;}
@@ -232,7 +232,7 @@ html, body {
 .hero-flowers {
     position: relative;
     overflow: hidden;
-    background: #ffc2d1;}
+    background: #f7d5c1;}
  
 .hero-flowers::before {
     content: "";
@@ -284,7 +284,7 @@ html, body {
     transition: background 0.2s, border-color 0.2s, transform 0.25s, box-shadow 0.25s;}
  
 .member-link:hover {
-    background: #ffc2d1;
+    background: #f7d5c1;
     border-color: #616247;
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(75, 20, 7, 0.18);}
@@ -297,7 +297,7 @@ html, body {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: #ffc2d1;
+    background: #f7d5c1;
     color: #4b1407;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.2rem;
@@ -333,11 +333,11 @@ html, body {
     border: 1px solid #dccbbd;}
  
 .requests thead th {
-    background: #ffc2d1;
+    background: #f7d5c1;
     color: #4b1407;
     font-weight: 700;}
  
-.requests tbody tr:hover { background: #ffeef2; }
+.requests tbody tr:hover { background: #fdf3ec; }
  
 /* small coloured label in the Status column (Pending / Completed / Declined) */
 .status {
@@ -383,7 +383,7 @@ html, body {
     justify-content: center;
     gap: 40px 32px;
     padding: 48px max(24px, calc((100% - 1000px) / 2));
-    background-color: #ffc2d1;}
+    background-color: #f7d5c1;}
  
 /* one workshop box: photo, name, description, price and Join button */
 .workshop-card {
@@ -438,7 +438,7 @@ html, body {
 .join-btn {
     display: block;
     padding: 9px;
-    background: #ffc2d1;
+    background: #f7d5c1;
     color: #4b1407;
     border-radius: 999px;
     text-decoration: none;
