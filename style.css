@@ -458,18 +458,6 @@ html, body {
 .workshop-card img.pos-bridal       { object-position: center 54%; }
 .workshop-card img.pos-storytelling { object-position: center 57%; }
 .workshop-card img.pos-garden       { object-position: center 40%; }
- 
-/*---------------------------------------------------------------------placeholder-pages---------------------alya*/
- 
-.placeholder {
-    max-width: 420px;
-    margin: 80px auto;
-    padding: 0 24px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 1.2rem;}
   
 /*-------------------------------------------------------------------------------------------------------------alya*/
 
