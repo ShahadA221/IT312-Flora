@@ -321,8 +321,7 @@ html, body {
  
 .requests thead th {
     background: #f7d5c1;
-    color: #4b1407;
-    font-weight: 700;}
+    color: #4b1407;}
  
 .requests tbody tr:hover { background: #fdf3ec; }
  
@@ -392,8 +391,7 @@ html, body {
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
-    object-position: center 50%;}
+    object-fit: cover; }
  
 .card-body {
     display: flex;
