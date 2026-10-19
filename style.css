@@ -167,16 +167,14 @@ html, body {
 
 /*---------------------------------------- Alya's pages: Workshops / Member Dashboard ----------------------------------------*/
  
-/*---------------------------------------------------------colors---------------------alya*/
- 
 /*---------------------------------------------------------shared-text---------------------alya*/
  
-.hero, .member-links, .requests, .sort-bar, .workshop-grid, .placeholder {
+.hero, .member-links, .requests, .sort-bar, .workshop-grid  {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333322;
     line-height: 1.5;}
  
-.hero a, .member-link, .join-btn { color: inherit; }
+.hero a { color: #4b1407; }
  
 .hero h1, .requests h2, .card-body h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -187,12 +185,7 @@ html, body {
 .hero {
     background: linear-gradient(135deg, #fbe3d3 0%, #f7d5c1 55%, #f0c4ad 100%);
     color: #4b1407;
-    border-radius: 0;
     padding: 20px 24px 64px;}
- 
-.hero-inner {
-    max-width: none;
-    margin: 0;}
  
 .hero .breadcrumb { font-size: 0.9rem; }
  
@@ -219,7 +212,6 @@ html, body {
     line-height: 1.1;}
  
 .hero-text p {
-    margin: 0;
     font-size: 1.2rem;
     font-weight: 500;}
  
@@ -294,7 +286,6 @@ html, body {
     height: 64px;
     border-radius: 50%;
     background: #f7d5c1;
-    color: #4b1407;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
