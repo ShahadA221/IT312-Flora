@@ -190,8 +190,6 @@ html, body {
     border-radius: 0;
     padding: 20px 24px 64px;}
  
-.hero-compact { padding-bottom: 320px; }
- 
 .hero-inner {
     max-width: none;
     margin: 0;}
@@ -213,8 +211,6 @@ html, body {
 .hero-text {
     text-align: center;
     margin-top: 36px;}
- 
-.hero-compact .hero-text { margin-top: 36px; }
  
 .hero-text h1 {
     margin: 0 0 8px;
