@@ -489,15 +489,7 @@ html, body {
 @media (prefers-reduced-motion: reduce) {
     .workshop-card, .member-link { animation: none; transition: none; }
     .workshop-card:hover, .member-link:hover { transform: none; }}
- 
-/*---------------------------------------------------------------------small-screens---------------------alya*/
- 
-@media (max-width: 860px) {
-    .workshop-card { flex-basis: calc((100% - 32px) / 2); }}
- 
-@media (max-width: 560px) {
-    .workshop-card { flex-basis: 100%; }}
- 
+  
 /*-------------------------------------------------------------------------------------------------------------alya*/
 
 
