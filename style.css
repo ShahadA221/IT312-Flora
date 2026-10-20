@@ -446,7 +446,7 @@ html, body {
 
 /*======================================================================================================================================================================================tala*/
 
-/*==================== Shared Styles for Manager and Team Pages — tala ====================*/
+/*==================== Shared Styles for Manager and Team Pages â€” tala ====================*/
 
 /*------------------------------------------------shared-text---------------------tala*/
 
@@ -485,7 +485,7 @@ html, body {
     color: #333322;
 }
 
-/*==================== PAGE 1: Manager Dashboard — tala ====================*/
+/*==================== PAGE 1: Manager Dashboard â€” tala ====================*/
 
 /*------------------------------------------------Manager-Hero---------------------tala*/
 
@@ -607,7 +607,7 @@ html, body {
     background-color: #fdf3ec;
 }
 
-/*==================== PAGE 2: Manage Activity Leaders & Instructors — tala ====================*/
+/*==================== PAGE 2: Manage Activity Leaders & Instructors â€” tala ====================*/
 
 /*------------------------------------------------Manage-Team-Hero---------------------tala*/
 
@@ -778,7 +778,7 @@ html, body {
     background-color: #333322;
 }
 
-/*==================== PAGE 3: Add New Workshop — tala ====================*/
+/*==================== PAGE 3: Add New Workshop â€” tala ====================*/
 
 /*------------------------------------------------shared-text---------------------tala*/
 
@@ -931,9 +931,844 @@ html, body {
     color: #4b1407;
 }
 
-/*==================== Shared Footer for All Pages — tala ====================*/
+/*==================== Shared Footer for All Pages â€” tala ====================*/
 
 /*------------------------------------------------Footer---------------------tala*/
+/*======================================== Norah's Pages ========================================*/
+
+/*---------------------------------------- Request to Join ----------------------------------------*/
+
+
+.request-subtitle {
+    color: #4b5841;
+    font-style:italic;
+}
+
+.join-workshop-section {
+    max-width: 860px;
+    margin: 40px auto 60px;
+    padding: 55px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #333322;
+    background: linear-gradient(to bottom, #fcf4f0, #fffbfa);
+    border-radius: 28px;
+}
+
+.join-workshop-intro {
+    width: 100%;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+.join-workshop-intro h2 {
+    width: 100%;
+    margin: 0 0 12px;
+    text-align: center;
+    color: #6e1111;
+    font-size: 1.8rem;
+    font-style:italic;
+}
+
+.join-workshop-floral-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px;
+}
+
+.join-workshop-floral-divider::before,
+.join-workshop-floral-divider::after {
+    content: "";
+    width: 75px;
+    border-top: 1px solid #dccbbd;
+    margin: 0 10px;
+}
+
+.join-workshop-floral-divider span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("photos/Flora-part.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.join-workshop-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 28px;
+    background-color: #fcf8ef;
+    border: 1px solid #dccbbd;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(75, 20, 7, 0.12);
+    animation: request-rise 0.5s ease;
+}
+
+
+/* Form Animation */
+
+@keyframes request-rise {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.join-workshop-form label {
+    margin: 0;
+    color: #616247;
+    font-weight: bold;
+}
+
+.join-workshop-required-star {
+    color: #8a3b32;
+}
+
+.join-workshop-form input,
+.join-workshop-form select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #dccbbd;
+    border-radius: 8px;
+    background-color: #fcfbf7;
+    color: #333322;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Placeholder Colors */
+.join-workshop-form input::placeholder {
+    color: #77705f;
+    opacity: 1;
+}
+
+.join-workshop-form select:invalid {
+    color: #77705f;
+}
+
+.join-workshop-form select:valid {
+    color: #333322;
+}
+
+.join-workshop-form input[type="date"]:invalid {
+    color: #77705f;
+}
+
+.join-workshop-form input[type="date"]:valid {
+    color: #333322;
+}
+
+/* Field Hover */
+.join-workshop-form input[type="text"]:hover,
+.join-workshop-form input[type="date"]:hover,
+.join-workshop-form select:hover {
+    border-color: #616247;
+    background-color: #f5f1e9;
+}
+
+/* Selected Option */
+.join-workshop-form select option:checked {
+    background-color: #dfe6d8;
+    color: #333322;
+}
+
+/* Field Focus */
+.join-workshop-form input:focus,
+.join-workshop-form select:focus {
+    border-color: #616247;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(97, 98, 71, 0.12);
+}
+
+.join-workshop-required-fields {
+    margin: 0;
+    color: #616247;
+    font-size: 0.9rem;
+}
+
+
+
+.join-workshop-form input[type="submit"] {
+    width: 180px;
+    margin: 10px auto 0;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #616247;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(75, 20, 7, 0.15);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.join-workshop-form input[type="submit"]:hover {
+    background-color: #4b1407;
+    transform: translateY(-2px);
+}
+
+
+
+
+/*---------------------------------------- About Us ----------------------------------------*/
+
+.about-page {
+    background-color: #fefcf8;
+}
+
+.about-page .about-section {
+    max-width: 1180px;
+
+    margin: 40px auto 30px;
+    padding: 0 25px;
+
+    box-sizing: border-box;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.about-page .about-breadcrumb {
+    margin-bottom: 18px;
+
+    color: #665b57;
+}
+
+.about-page .about-breadcrumb a {
+    color: #665b57;
+
+
+    font-weight: bold;
+}
+
+.about-page .about-breadcrumb a:hover {
+    color: #8a3b32;
+}
+
+.about-page .about-breadcrumb span {
+    margin-left: 6px;
+}
+
+.about-page .about-card {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 55px;
+
+    padding: 42px;
+
+    background-color: #f8f9fe;
+
+    border: 1px solid #efd5c3;
+    border-radius: 28px;
+
+    box-shadow: 0 8px 22px rgba(75, 20, 7, 0.07);
+
+    box-sizing: border-box;
+    animation: about-rise 0.5s ease;
+}
+
+.about-page .about-content {
+    width: 60%;
+}
+
+.about-page .about-content h1 {
+    margin: 0 0 10px;
+
+    color: #741f18;
+
+    font-size: 3rem;
+}
+
+.about-page .about-tagline {
+    margin: 0;
+
+    color: #1d1541;
+
+    font-size: 1.18rem;
+    font-style: italic;
+}
+
+.about-page .about-divider {
+    width: 250px;
+
+    margin: 20px 0 25px;
+
+    border-top: 1px solid #efd5c3;
+}
+
+.about-page .about-content h2 {
+    margin: 0 0 12px;
+
+    color: #1d1541;
+
+    font-size: 1.55rem;
+    font-style: italic;
+}
+
+.about-page .mission-text {
+    margin: 0;
+
+    color: #4b403a;
+
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.about-page .about-circle-image {
+    width: 330px;
+height: 330px;
+
+flex-shrink: 0;
+
+border-radius: 50%;
+
+background-image: url("photos/about-circle.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+border: 4px solid rgba(220, 143, 88, 0.541);
+background-clip: padding-box;
+
+box-shadow: 0 9px 20px rgba(75, 20, 7, 0.13);
+
+box-sizing: border-box;
+
+transition: transform 0.3s ease;
+}
+
+.about-page .about-circle-image:hover {
+    transform: scale(1.04);
+}
+
+/* About Card Animation */
+
+@keyframes about-rise {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*---------------------------------------- Our Instructors ----------------------------------------*/
+
+.about-page .instructors-section {
+    max-width: 1180px;
+
+    margin: 0 auto 58px;
+    padding: 42px 38px;
+
+    box-sizing: border-box;
+
+    background-color: #f8f1e6;
+
+    border: 1px solid #ded2c5;
+    border-radius: 28px;
+
+    box-shadow: 0 7px 20px rgba(75, 20, 7, 0.06);
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-page .instructors-section > h2 {
+    margin: 0 0 32px;
+
+    text-align: center;
+
+    color: #741f18;
+
+    font-size: 2.15rem;
+}
+
+.about-page .instructor-list {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    overflow-x: auto;
+
+    padding: 6px 8px 15px;
+}
+
+.about-page .instructor-card {
+    flex: 0 0 30%;
+
+    box-sizing: border-box;
+
+    padding: 27px 22px 24px;
+
+    text-align: center;
+
+    background-color: #fffaf5;
+
+    border: 1px solid #ded4c8;
+    border-radius: 20px;
+
+    box-shadow: 0 6px 15px rgba(75, 20, 7, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.about-page .instructor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 20px rgba(75, 20, 7, 0.10);
+}
+.about-page .instructor-card img {
+    width: 138px;
+    height: 138px;
+
+    border-radius: 50%;
+
+    border: 3px solid #737860;
+
+    box-shadow: 0 5px 12px rgba(75, 20, 7, 0.10);
+     transition: transform 0.3s ease;
+}
+.about-page .instructor-card:hover img {
+    transform: scale(1.04);
+}
+
+.about-page .instructor-card h3 {
+    margin: 17px 0 6px;
+}
+
+.about-page .instructor-card h3 a {
+    color: #596046;
+
+    text-decoration: underline;
+
+    font-size: 1.1rem;
+}
+
+.about-page .instructor-card h3 a:hover {
+    color: #8a3b32;
+
+    text-decoration: underline;
+}
+
+.about-page .instructor-card p {
+    margin: 0;
+
+    color: #9a584c;
+
+    font-size: 0.95rem;
+}
+
+
+/*---------------------------------------- Join Our Team ----------------------------------------*/
+
+.about-page .join-team-section {
+    max-width: 1180px;
+
+    min-height: 525px;
+
+    margin: 0 auto 65px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    border: 1px solid #737860;
+    border-radius: 28px;
+
+    box-shadow: 0 9px 24px rgba(75, 20, 7, 0.08);
+
+    box-sizing: border-box;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-page .join-team-image {
+    width: 25%;
+
+    flex-shrink: 0;
+
+    background-image: url("photos/join-team-workshop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-page .join-team-content {
+    width: 75%;
+
+    box-sizing: border-box;
+
+    padding: 36px 40px 40px;
+
+    background-color: #fff7f7;
+
+    border-left: 4px solid #737860;
+}
+
+.about-page .join-team-content > h2 {
+    margin: 0 0 3px;
+
+    color: #741f18;
+
+    font-size: 2.2rem;
+}
+
+.about-page .join-team-tagline {
+    margin: 0 0 14px;
+
+    color: #737860;
+
+    font-size: 1.08rem;
+    font-style: italic;
+}
+
+.about-page .join-team-description {
+    max-width: 680px;
+
+    margin: 0 0 30px;
+
+    color: #4b403a;
+
+    font-size: 0.96rem;
+    line-height: 1.55;
+}
+
+.about-page .join-team-form {
+    width: 100%;
+}
+
+.about-page .join-team-fields {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 18px;
+
+    box-sizing: border-box;
+}
+
+.about-page .join-team-column {
+    width: 31%;
+}
+
+.about-page .join-team-field {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    box-sizing: border-box;
+}
+
+.about-page .join-team-field label {
+    color: #52473f;
+
+    font-weight: bold;
+}
+
+.about-page .required-star {
+    color: #9a4137;
+}
+
+.about-page .join-team-field input,
+.about-page .join-team-field select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 10px;
+
+    border: 1px solid #aeb08f;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    color: #403831;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size: 0.9rem;
+}
+
+.about-page .join-team-field input::placeholder {
+    color: #948c84;
+}
+
+.about-page .join-team-field input:focus,
+.about-page .join-team-field select:focus {
+    border-color: #737860;
+
+    outline: none;
+}
+
+.about-page .upload-box {
+    width: 100%;
+
+    min-height: 140px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    background-color: #ffffff;
+
+    border: 1px dashed #92977b;
+    border-radius: 8px;
+}
+
+.about-page .upload-box input[type="file"] {
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.about-page .upload-box small {
+    color: #756b64;
+
+    text-align: center;
+
+    font-size: 0.8rem;
+}
+
+.about-page .join-team-form input[type="submit"] {
+    width: 100%;
+
+    margin-top: 8px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #737860;
+
+    color: white;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.about-page .join-team-form input[type="submit"]:hover {
+    background-color: #741f18;
+}
+
+
+
+/*---------------------------------------- Instructor Profile ----------------------------------------*/
+
+.profile-main {
+    background-color: #fcfbf7;
+}
+
+
+.profile-hero {
+    height: 260px;
+    background-image: url("photos/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-section {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 30px 25px 60px;
+}
+
+.profile-breadcrumb {
+    margin-bottom: 32px;
+    color: #756c63;
+}
+
+.profile-breadcrumb a {
+    color: #6e7463;
+    text-decoration: underline;
+}
+
+.profile-breadcrumb a:hover {
+    color: #a85b55;
+}
+
+.profile-breadcrumb span {
+    margin: 0 7px;
+}
+
+.profile-heading {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.profile-heading h1 {
+    margin: 0 0 8px;
+    color: #874e5b;
+    font-size: 2.4rem;
+}
+
+.profile-heading p {
+    margin: 0;
+    color:#6d7a5d;
+    font-style: italic;
+}
+
+.profile-table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid #d8cfc4;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #fffdf9;
+    color: #524b3c;
+    box-shadow: 0 8px 24px rgba(63, 59, 50, 0.08);
+    animation: profile-rise 0.5s ease;
+}
+
+.profile-table th,
+.profile-table td {
+    padding: 17px 22px;
+}
+
+.profile-table tr + tr th,
+.profile-table tr + tr td {
+    border-top: 1px solid #e2d9d0;
+}
+
+.profile-table th {
+    width: 28%;
+    text-align: left;
+    background-color: #f7f2ea;
+    color: #6d7a5d;
+}
+
+.profile-table td {
+    text-align: left;
+    background-color: #fffdf9;
+    color: #524b3c;
+    transition: background-color 0.2s ease;
+}
+
+.profile-table .profile-name {
+    width: auto;
+    text-align: center;
+    background-color: #fbefee;
+    color: #874e5b;
+    font-size: 1.35rem;
+    transition: background-color 0.2s ease;
+}
+
+.profile-table .profile-name:hover {
+    background-color: #f6e4e2;
+}
+.profile-heading h1::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 2px;
+    margin: 10px auto 0;
+    background-color: #d8b8b5;
+}
+
+
+.profile-photo {
+    width: 155px;
+    height: 155px;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #d8cfc4a4;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.03);
+}
+
+
+.profile-table tr:hover td {
+    background-color: #faf4f1;
+}
+
+.profile-email {
+    color: #874e5b;
+    text-decoration: underline;
+}
+
+
+
+.profile-email:hover {
+    color: #a85b55;
+}
+
+/* Profile Animation */
+
+@keyframes profile-rise {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .profile-section {
+        padding: 25px 15px 45px;
+    }
+
+    .profile-table th,
+    .profile-table td {
+        padding: 14px 12px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+/*======================================== End of Norah's Pages ========================================*/
+
 
 footer {
     display: flex;
