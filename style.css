@@ -1169,7 +1169,7 @@ html, body {
 
     padding: 42px;
 
-    background-color: #f8f9fe;
+    background-color: #fcf4f1;
 
     border: 1px solid #efd5c3;
     border-radius: 28px;
@@ -1195,7 +1195,7 @@ html, body {
 .about-page .about-tagline {
     margin: 0;
 
-    color: #1d1541;
+    color:  #737860;
 
     font-size: 1.18rem;
     font-style: italic;
@@ -1212,7 +1212,7 @@ html, body {
 .about-page .about-content h2 {
     margin: 0 0 12px;
 
-    color: #1d1541;
+    color:  #737860;
 
     font-size: 1.55rem;
     font-style: italic;
