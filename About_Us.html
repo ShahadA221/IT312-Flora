@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+
+    <!-- ************************************* Header ************************************* -->
+
+    <header>
+        <div>
+
+            <a href="index.html">
+                <img src="photos/Flora.png" alt="Flora Logo">
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Workshops.html">Workshops</a></li>
+                <li><a href="Member_Dashboard.html">Member Dashboard</a></li>
+                <li><a href="Manager_Dashboard.html">Manager Dashboard</a></li>
+                <li><a class="active" href="About_Us.html">About Us</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ************************************* About Us ************************************* -->
+
+        <section class="about-section">
+
+            <nav class="about-breadcrumb">
+                <a href="index.html">Home</a>
+                <span>&gt;</span>
+                <span>About Us</span>
+            </nav>
+
+
+            <div class="about-card">
+
+                <div class="about-content">
+
+                    <h1>About Us</h1>
+
+                    <p class="about-tagline">
+                        Where flower lovers gather to bloom together.
+                    </p>
+
+                    <div class="about-divider"></div>
+
+                    <h2>Our Mission :</h2>
+
+                    <p class="mission-text">
+                        At Flora, our mission is to create a welcoming community
+                        where a shared love for flowers becomes an opportunity
+                        to learn, create, and connect. Through hands-on workshops
+                        and meaningful experiences, we help members develop
+                        practical floral skills, express their creativity, and
+                        build lasting connections with others who share the same
+                        passion.
+                    </p>
+
+                </div>
+
+
+                <div class="about-circle-image"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ************************************* Our Instructors ************************************* -->
+
+        <section class="instructors-section">
+
+            <h2>Our Instructors</h2>
+
+
+            <div class="instructor-list">
+
+                <article class="instructor-card">
+
+                    <img
+                        src="photos/instructor-1.jpeg"
+                        alt="Sara Khalid">
+
+                    <h3>
+                        <a href="Sara_Khalid.html">
+                            Sara Khalid
+                        </a>
+                    </h3>
+
+                    <p>Floral Design</p>
+
+                </article>
+
+
+                <article class="instructor-card">
+
+                    <img
+                        src="photos/instructor-2.jpeg"
+                        alt="Noura Abdullah">
+
+                    <h3>
+                        <a href="Noura_Abdullah.html">
+                            Noura Abdullah
+                        </a>
+                    </h3>
+
+                    <p>Event Styling</p>
+
+                </article>
+
+
+                <article class="instructor-card">
+
+                    <img
+                        src="photos/instructor-3.jpeg"
+                        alt="Lina Abdulrahman">
+
+                    <h3>
+                        <a href="Lina_Abdulrahman.html">
+                            Lina Abdulrahman
+                        </a>
+                    </h3>
+
+                    <p>Botanical Art</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ************************************* Join Our Team ************************************* -->
+
+        <section class="join-team-section">
+
+            <div class="join-team-image"></div>
+
+
+            <div class="join-team-content">
+
+                <h2>Join Our Team</h2>
+
+                <p class="join-team-tagline">
+                    Share your passion, Grow with us!
+                </p>
+
+                <p class="join-team-description">
+                    Interested in becoming an instructor or activity leader?
+                    Share your skills and creativity with the Flora community.
+                </p>
+
+
+                <form
+                    class="join-team-form"
+                    method="post"
+                    enctype="multipart/form-data">
+
+                    <div class="join-team-fields">
+
+
+                        <div class="join-team-column">
+
+                            <div class="join-team-field">
+
+                                <label for="team-name">
+                                    Full Name
+                                    <span class="required-star">*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="team-name"
+                                    name="team-name"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="join-team-field">
+
+                                <label for="team-birth-date">
+                                    Date of Birth
+                                    <span class="required-star">*</span>
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="team-birth-date"
+                                    name="team-birth-date"
+                                    required>
+
+                            </div>
+
+
+                            <div class="join-team-field">
+
+                                <label for="team-expertise">
+                                    Area of Expertise
+                                    <span class="required-star">*</span>
+                                </label>
+
+                                <select
+                                    id="team-expertise"
+                                    name="team-expertise"
+                                    required>
+
+                                    <option value="" disabled selected>
+                                        Select an area
+                                    </option>
+
+                                    <option value="floral-design">
+                                        Floral Design
+                                    </option>
+
+                                    <option value="event-styling">
+                                        Event Styling
+                                    </option>
+
+                                    <option value="botanical-art">
+                                        Botanical Art
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="join-team-column">
+
+                            <div class="join-team-field">
+
+                                <label for="team-photo">
+                                    Photo
+                                    <span class="required-star">*</span>
+                                </label>
+
+                                <div class="upload-box">
+
+                                    <input
+                                        type="file"
+                                        id="team-photo"
+                                        name="team-photo"
+                                        required>
+
+                                    <small>Upload your photo</small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="join-team-column">
+
+                            <div class="join-team-field">
+
+                                <label for="team-email">
+                                    Email
+                                    <span class="required-star">*</span>
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="team-email"
+                                    name="team-email"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+
+                            <div class="join-team-field">
+
+                                <label for="team-education">
+                                    Education
+                                    <span class="required-star">*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="team-education"
+                                    name="team-education"
+                                    placeholder="Enter your education"
+                                    required>
+
+                            </div>
+
+
+                            <div class="join-team-field">
+
+                                <label for="team-skills">
+                                    Skills
+                                    <span class="required-star">*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="team-skills"
+                                    name="team-skills"
+                                    placeholder="E.g. Flower arrangement"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ************************************* Footer ************************************* -->
+
+    <footer>
+
+        <section id="Social-Media">
+
+            <h3>Social Media</h3>
+
+            <ul>
+
+                <li>
+                    <a href="https://instagram.com">
+                        <img
+                            src="photos/flora_footer_icons/instagram.svg"
+                            alt="">
+                        Instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://facebook.com">
+                        <img
+                            src="photos/flora_footer_icons/facebook.svg"
+                            alt="">
+                        Facebook
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com">
+                        <img
+                            src="photos/flora_footer_icons/x.svg"
+                            alt="">
+                        X
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <div class="footer-logo">
+
+            <img
+                src="photos/Flora.png"
+                alt="Flora Logo">
+
+        </div>
+
+
+        <section id="contact-us">
+
+            <h3>Contact Us</h3>
+
+            <ul>
+
+                <li>
+                    <img
+                        src="photos/flora_footer_icons/phone.svg"
+                        alt="">
+                    +966 50 123 4567
+                </li>
+
+                <li>
+                    <img
+                        src="photos/flora_footer_icons/email.svg"
+                        alt="">
+                    flora.club@example.com
+                </li>
+
+                <li>
+                    <img
+                        src="photos/flora_footer_icons/location.svg"
+                        alt="">
+                    Riyadh, Saudi Arabia
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <p class="copyright">
+            Copyright &copy; Flora
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

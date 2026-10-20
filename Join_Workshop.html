@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora - Request to Join an Offering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ************************************* Header ************************************* -->
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="photos/Flora.png" alt="Flora Logo">
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Workshops.html">Workshops</a></li>
+                <li><a href="Member_Dashboard.html">Member Dashboard</a></li>
+                <li><a href="Manager_Dashboard.html">Manager Dashboard</a></li>
+                <li><a href="About_Us.html">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ************************************* Page Introduction ************************************* -->
+        <section class="hero hero-compact">
+
+            <div class="hero-inner">
+
+                <nav class="breadcrumb">
+                    <ol>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="Member_Dashboard.html">
+                                Member Dashboard
+                            </a>
+                        </li>
+
+                        <li aria-current="page">
+                            Request to Join an Offering
+                        </li>
+                    </ol>
+                </nav>
+
+
+                <div class="hero-text">
+
+                    <h1>Request to Join an Offering</h1>
+
+                    <p class="request-subtitle">
+                        Choose a workshop you would like to join
+                        and select your preferred date.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ************************************* Request Form ************************************* -->
+        <section class="join-workshop-section">
+
+            <div class="join-workshop-intro">
+
+                <h2>Your Next Floral Experience Starts Here</h2>
+
+                <div class="join-workshop-floral-divider">
+                    <span></span>
+                </div>
+
+            </div>
+
+
+            <form class="join-workshop-form" method="post">
+
+                <label for="offering">
+                    Offering
+                    <span class="join-workshop-required-star">*</span>
+                </label>
+
+                <select id="offering"
+                        name="offering"
+                        required>
+
+                    <option value="" disabled selected>
+                        Select an offering
+                    </option>
+
+                    <option value="my-first-bouquet">
+                        My First Bouquet
+                    </option>
+
+                    <option value="family-in-bloom">
+                        Family in Bloom
+                    </option>
+
+                    <option value="pressed-framed">
+                        Pressed &amp; Framed
+                    </option>
+
+                    <option value="bridal-blossom">
+                        Bridal Blossom
+                    </option>
+
+                    <option value="flower-storytelling">
+                        Flower Storytelling
+                    </option>
+
+                    <option value="garden-to-vase">
+                        From Garden to Vase
+                    </option>
+
+                </select>
+
+
+                <label for="full-name">
+                    Full Name
+                    <span class="join-workshop-required-star">*</span>
+                </label>
+
+                <input type="text"
+                       id="full-name"
+                       name="full-name"
+                       placeholder="Enter your full name"
+                       required>
+
+
+                <label for="preferred-date">
+                    Preferred Date
+                    <span class="join-workshop-required-star">*</span>
+                </label>
+
+                <input type="date"
+                       id="preferred-date"
+                       name="preferred-date"
+                       required>
+
+
+                <p class="join-workshop-required-fields">
+                    <span class="join-workshop-required-star">*</span>
+                    Required fields
+                </p>
+
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ************************************* Footer ************************************* -->
+    <footer>
+
+        <section id="Social-Media">
+            <h3>Social Media</h3>
+
+            <ul>
+                <li>
+                    <a href="https://instagram.com">
+                        <img src="photos/flora_footer_icons/instagram.svg" alt="">
+                        Instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://facebook.com">
+                        <img src="photos/flora_footer_icons/facebook.svg" alt="">
+                        Facebook
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com">
+                        <img src="photos/flora_footer_icons/x.svg" alt="">
+                        X
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+        <div class="footer-logo">
+            <img src="photos/Flora.png" alt="Flora Logo">
+        </div>
+
+
+        <section id="contact-us">
+            <h3>Contact Us</h3>
+
+            <ul>
+                <li>
+                    <img src="photos/flora_footer_icons/phone.svg" alt="">
+                    +966 50 123 4567
+                </li>
+
+                <li>
+                    <img src="photos/flora_footer_icons/email.svg" alt="">
+                    flora.club@example.com
+                </li>
+
+                <li>
+                    <img src="photos/flora_footer_icons/location.svg" alt="">
+                    Riyadh, Saudi Arabia
+                </li>
+            </ul>
+        </section>
+
+
+        <p class="copyright">
+            Copyright &copy; Flora
+        </p>
+
+    </footer>
+
+</body>
+</html>
