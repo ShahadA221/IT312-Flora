@@ -780,7 +780,8 @@ footer #contact-us strong {
 /* Workshops page banner only (Member Dashboard uses .hero-flowers) */
 .hero:not(.hero-flowers) {
     background: #ffe8d6;
-    color: #796465;}
+    color: #4b1407;
+    margin-top: -7px;}
  
 /*---------------------------------------------------------Hero-Flowers-(Member-Dashboard)---------------------alya*/
  
@@ -917,7 +918,7 @@ footer #contact-us strong {
 .sort-label {
     font-weight: bold;
     font-size: 1.05rem;
-    color: #796465;}
+    color: #4b1407;}
  
 .sort-bar select {
     padding: 8px 18px;
