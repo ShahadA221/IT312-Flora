@@ -808,6 +808,10 @@ footer #contact-us strong {
 .hero-flowers .hero-inner {
     position: relative;
     z-index: 1;}
+
+main:has(.member-links) {
+    background: #FFE8D6;
+    display: flow-root;}
  
 /*---------------------------------------------------------Member-Links---------------------alya*/
  
