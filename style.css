@@ -887,7 +887,8 @@ main:has(.member-links) {
 .requests table {
     width: 100%;
     border-collapse: collapse;
-    text-align: center; }
+    text-align: center;
+    background: #fff; }
  
 .requests th,
 .requests td {
