@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flora - Workshop Evaluation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="photos/Flora_logo.jpeg" alt="Flora Logo" width="100" height="50">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Workshops.html">Workshops</a></li>
+                    <li><a href="Member_Dashboard.html" class="active">Member Dashboard</a></li>
+                    <li><a href="Manager_Dashboard.html">Manager Dashboard</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> &gt; <a href="Member_Dashboard.html">Member Dashboard</a> &gt; <a href="Workshop_Evaluation.html">Rate Your Experience</a>
+            </nav>
+
+            <div class="evaluation-container">
+                
+            <form class="form-section" action="#" method="POST" enctype="multipart/form-data">
+                
+                <h1>Rate Your Experience</h1>
+
+<!--*************************************Workshop-Selection-Rating****************************************************************-->
+
+                <div class="form-group">
+                    <label for="Workshop-Selection">The Workshop ...</label>
+                    <div class="in-a-row">
+                        <select id="Workshop-Selection" name="Workshop-Selection" required>
+                            <option value="" disabled selected>Select a Workshop</option>
+                            <option value="workshop1">My First Bouquet | OCT 3 2026</option>
+                            <option value="workshop2">Family in Bloom | SEP 12 2026</option>
+                            <option value="workshop3">Family in Bloom | SEP 1 2026</option>
+                            <option value="workshop4">From Garden to Vase | MAR 22 2026</option>
+                            <option value="workshop5">Family in Bloom | DEC 9 2025</option>
+                        </select>
+                        <div class="to-rate-in-stars">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" class="star">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" class="star">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" class="star">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" class="star">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" class="star">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+
+<!--*************************************Workshop-Comment-input****************************************************************-->
+                <div class="form-group">
+                    <label for="comment">Your Comment ...</label>
+                    <input type="text" id="comment" name="comment" placeholder="Share your thoughts about the workshop..." required>
+                </div>
+
+<!--*************************************Workshop-Photo-Upload****************************************************************-->
+             <div class="in-a-row">
+                <div class="form-group">
+                    <label for="photo">Photo ...</label>
+                    <div class="photo-upload-box">
+                        <input type="file" id="photo" name="photo" accept="image/*">
+                        <label for="photo" class="upload-area">
+                            <img src="photos/add-image-icon.jpeg" alt="Upload Icon">
+                        </label>
+                    </div>
+                </div>
+
+<!--*************************************Action Buttons****************************************************************-->
+                <div class="form-actions">
+                    <button type="button" class="btn-cancel">Cancel</button>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </div>
+
+            </form>
+
+<!--*************************************Workshop-Evaluation-background****************************************************************-->
+
+        <div class="Workshop-Evaluation-background">
+            <img src="photos/Workshop-Evaluation-background.jpeg" alt="Experience Image">
+        </div>
+        </div>
+        </main>
+
+<!--*************************************footer****************************************************************-->
+    <footer>
+            <section id="Social-Media">
+                <h2>Social Media</h2>
+                <ul>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://facebook.com">FaceBook</a></li>
+                    <li><a href="https://x.com">X</a></li>
+                </ul>
+            </section>
+
+            <div>
+                <img src="photos/Flora_logo.jpeg" alt="Flora Logo">
+                <p>Copyright &copy; Flora</p>
+            </div>
+
+            <section id="contact-us">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><strong>Phone:</strong> +966 456 789</li>
+                    <li><strong>Email:</strong> info@flora.com</li>
+                    <li><strong>Location:</strong> Riyadh, Kingdom of Saudi Arabia</li>
+                </ul>
+            </section>
+        </footer>
+
+</body>
+</html>
