@@ -781,7 +781,8 @@ footer #contact-us strong {
 .hero:not(.hero-flowers) {
     background: #ffe8d6;
     color: #4b1407;
-    margin-top: -7px;}
+    margin-top: -7px;
+    padding-top: 7px;}
  
 /*---------------------------------------------------------Hero-Flowers-(Member-Dashboard)---------------------alya*/
  
