@@ -888,7 +888,7 @@ footer #contact-us strong {
 .requests th,
 .requests td {
     padding: 12px 14px;
-    border: none;}
+    border: 1px solid #e4e0d6;}
  
 .requests thead th {
     background: #A5A58D;
