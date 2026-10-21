@@ -1,5 +1,4 @@
-/*---------------------------------------- Shahad's pages: HOME / FLOWER OF THE MONTHE / Workshop Evaluation  ----------------------------------------*/
-/*---------------------------------------------------------header---------------------shahad*/
+/*---------------------------------------------------------header------------------------------ALL PAGES*/
 header {
     background-color: #fcfbf7;
     position: fixed;
@@ -38,7 +37,7 @@ header div a.active{
     font-weight: bold;
     border-bottom: 2px solid #333322;}
 
-/*--------------------------------------------------------------body---------------------shahad*/
+/*--------------------------------------------------------------body---------------------ALL PAGES*/
 body {
     padding-top: 71px; }
 
@@ -51,7 +50,137 @@ html, body {
     width: 100%;
     overflow-x: hidden;}
 
-/*----------------------------------------------------------Intro----------------------------shahad*/
+/*--------------------------------------------------------------breadcrumb---------------------ALL PAGES*/
+
+ .breadcrumb {
+    font-size: 0.9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;}
+
+.breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;}
+
+.breadcrumb li + li::before {
+    content: "\25B8"; 
+    margin-right: 8px;
+    color: #616247;}
+
+.breadcrumb a {
+    color: #616247;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #616247;}
+
+.breadcrumb a:hover {
+    border-bottom: 2px solid #333322;
+    color: #333322;}
+
+
+
+/*--------------------------------------------------------------footer---------------------ALL PAGES*/
+
+    
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    background-color: #fcfbf7;
+    border-top: 1px solid #dccbbd;
+    color: #333322;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    gap: 80px;
+}
+
+/*------------------------------------------------Footer-Headings---------------------*/
+
+footer h3 {
+    color: #4b1407;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/*------------------------------------------------Footer-Lists---------------------*/
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+/*------------------------------------------------Social-Media---------------------*/
+
+footer #Social-Media {
+    flex: 1;
+    text-align: left;
+    padding-right: 15px;
+}
+
+footer #Social-Media a {
+    color: #616247;
+    text-decoration: none;
+}
+
+footer #Social-Media a:hover {
+    color: #4b1407;
+    text-decoration: underline;
+}
+
+/*------------------------------------------------Footer-Logo-Copyright---------------------*/
+
+footer div {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+}
+
+footer div img {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto 12px;
+}
+
+footer div p {
+    border-top: 1px solid #dccbbd;
+    padding-top: 10px;
+    color: #616247;
+    font-size: 0.75rem;
+}
+
+/*------------------------------------------------Contact-Us---------------------*/
+
+footer #contact-us {
+    flex: 1;
+    text-align: left;
+    padding-left: 15px;
+}
+
+footer #contact-us strong {
+    color: #616247;
+}
+
+
+
+
+
+/*---------------------------------------- Shahad's pages: HOME / FLOWER OF THE MONTHE / Workshop Evaluation  ----------------------------------------*/
+
+/*----------------------------------------------------------HOME-Intro----------------------------shahad*/
 
 #Intro {
     position: relative;
@@ -462,12 +591,12 @@ html, body {
 .evaluation-container {
     display: flex;
     width: 100%;
-    min-height: 80vh;
-    margin-top: -20px;}
+    min-height: 80vh;}
+
 
 .form-section {
     flex: 1;
-    padding: 40px 60px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;}
@@ -624,7 +753,6 @@ html, body {
     color: #333322;
     line-height: 1.5;}
  
-.hero a { color: #4b1407; }
  
 .requests h2, .card-body h2 {
     color: #4b1407;}
@@ -636,19 +764,6 @@ html, body {
     color: #4b1407;
     padding: 20px 24px 64px;}
  
-.hero .breadcrumb { font-size: 0.9rem; }
- 
-.hero .breadcrumb ol {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    list-style: none;}
- 
-.hero .breadcrumb li + li::before {
-    content: "\25B8";
-    margin-right: 8px;}
- 
-.hero .breadcrumb a { font-weight: bold; }
  
 .hero-text {
     text-align: center;
@@ -2214,95 +2329,3 @@ transition: transform 0.3s ease;
         height: 120px;
     }
 }
-
-
-
-/*======================================== End of Norah's Pages ========================================*/
-
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 8%;
-    background-color: #fcfbf7;
-    border-top: 1px solid #dccbbd;
-    color: #333322;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.8;
-}
-
-/*------------------------------------------------Footer-Headings---------------------tala*/
-
-footer h3 {
-    color: #4b1407;
-    font-size: 1rem;
-    margin-bottom: 8px;
-}
-
-/*------------------------------------------------Footer-Lists---------------------tala*/
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer li {
-    font-size: 0.85rem;
-    margin-bottom: 4px;
-}
-
-/*------------------------------------------------Social-Media---------------------tala*/
-
-footer #Social-Media {
-    flex: 1;
-    text-align: left;
-    padding-right: 15px;
-}
-
-footer #Social-Media a {
-    color: #616247;
-    text-decoration: none;
-}
-
-footer #Social-Media a:hover {
-    color: #4b1407;
-    text-decoration: underline;
-}
-
-/*------------------------------------------------Footer-Logo-Copyright---------------------tala*/
-
-footer div {
-    flex: 1;
-    text-align: center;
-    padding: 0 15px;
-}
-
-footer div img {
-    display: block;
-    width: 120px;
-    height: auto;
-    margin: 0 auto 12px;
-}
-
-footer div p {
-    border-top: 1px solid #dccbbd;
-    padding-top: 10px;
-    color: #616247;
-    font-size: 0.75rem;
-}
-
-/*------------------------------------------------Contact-Us---------------------tala*/
-
-footer #contact-us {
-    flex: 1;
-    text-align: left;
-    padding-left: 15px;
-}
-
-footer #contact-us strong {
-    color: #616247;
-}
-
-/*--------------------------------------------------------------------------tala*/
