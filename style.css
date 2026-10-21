@@ -834,7 +834,7 @@ main:has(.member-links) {
     gap: 8px;
     min-height: 130px;
     padding: 20px;
-    border: 2px solid #6B705C;
+    border: 1.5px solid #6B705C;
     border-radius: 28px;
     text-decoration: none;
     font-size: 1.5rem;
@@ -893,7 +893,7 @@ main:has(.member-links) {
 .requests th,
 .requests td {
     padding: 12px 14px;
-    border: 2px solid #6B705C;}
+    border: 1.5px solid #6B705C;}
  
 .requests thead th {
     background: #A5A58D;
