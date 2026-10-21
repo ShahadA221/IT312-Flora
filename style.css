@@ -1,3 +1,4 @@
+/*---------------------------------------- Shahad's pages: HOME / FLOWER OF THE MONTHE / Workshop Evaluation  ----------------------------------------*/
 /*---------------------------------------------------------header---------------------shahad*/
 header {
     background-color: #fcfbf7;
@@ -58,14 +59,18 @@ html, body {
     min-height: 80vh;
     box-sizing: border-box;
     
+    background-color:rgb(202, 79, 68) ;
+
+
+        
     background-image: 
         linear-gradient(
             to right, 
-            rgba(219, 145, 127, 0.85) 0%,   
-            rgba(194, 88, 65, 0.45) 45%, 
-            rgba(255, 255, 255, 0) 80%     
+            rgba(247, 217, 187, 0.5) 0%,   
+            rgba(247, 217, 187, 0.2) 45%, 
+            rgba(255, 254, 254, 0) 80%     
         ),
-        url('photos/background_img3.jpeg'); 
+        url('photos/home_background_img.jpeg'); 
 
     background-position: right center; 
     background-repeat: repeat-x;        
@@ -74,7 +79,8 @@ html, body {
     display: flex;
     align-items: center;               
     justify-content: flex-start;       
-    padding: 0 4%;}
+    padding: 0 4%; }
+
 
 .hero-content {
     max-width: 550px;                  
@@ -87,19 +93,16 @@ html, body {
 #Intro h1 {
     font-size: 5rem;                  
     font-weight: 800;
-    line-height: 1.1;
-    margin: 0;}
+    line-height: 1.1;}
 
 #Intro h2 {
     font-size: 2.2rem;
     font-weight: 700;
-    line-height: 1.3;
-    margin: 0;}
+    line-height: 1.3;}
 
 #Intro p {
     font-size: 1.2rem;
-    font-weight: 500;
-    margin: 0;}
+    font-weight: 500;}
 
 
 /*---------------------------------------------------------------------Workshops---------------------shahad*/
@@ -107,40 +110,71 @@ html, body {
 #Workshops {
     padding: 20px 20px;
     text-align: center;
-    background-color: #f7d5c1}
-
-#Workshops h2 {
-    font-size: 2.2rem;
-    color: #4b1407;
-    margin-bottom: 20px;
-    font-family: Georgia, serif;}
-
-#Workshops {
+    background-color: #ffe8d6;
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;}
 
 #Workshops h2 {
+    font-size: 2.2rem;
+    color: #4b1407;
+    font-family: Georgia, serif;
     width: 100%;}
 
 #Workshops article {
     padding: 15px;
-    width: 250px;
+    width: 300px; 
+    height: 360px;
     display: flex; 
     flex-direction: column; 
     align-items: flex-start; 
     gap: 10px;
     position: relative;
     background-color: #ffffff;
+    transition: all 0.3s ease;
     text-align: left;        
     font-family: Georgia, 'Times New Roman', Times, serif;}
 
-#Workshops article img[alt*="img"] {
-    width: 100%;
-    height: 150px;
-    background-color: rgb(207, 241, 230);
+#Workshops article .extra-info {
+    display: none; 
+    font-size: 0.9rem;
+    color: #6f1c1c;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 17px;}
+
+#Workshops article:hover .extra-info {
+    display: block; }
+
+
+#Workshops article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);}
+
+#Workshops .image-box {
+    margin-top: 1px;
+    position: relative;         
+    width: 270px;
+    height: 180px;}
+
+#Workshops article img {
+    display: block;
+    width: 270px;
+    height: 180px;
     object-fit: cover;}
+
+#Workshops .Star-rating {
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    bottom: 8px;          
+    right: 5px;
+    z-index: 2;
+    border-radius: 25px;
+    object-fit: cover;}
+
 
 #Workshops article .btn-img,
 #Workshops article input[type="image"] {
@@ -159,6 +193,422 @@ html, body {
 
 
 /*---------------------------------------------------------------------Flower-Of-The-Month---------------------shahad*/
+
+#Flower-Of-The-Month {
+    display: flex;                      
+    flex-direction: row;             
+    align-items: center;  
+    justify-content: space-between;              
+    text-align: start ;                 
+    gap: 30px;                          
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+#Flower-Of-The-Month .flower-content {
+    padding: 33px 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;      
+    gap: 40px;
+    max-width: 800px;}
+
+#Flower-Of-The-Month h2 {
+    font-size: 3.7rem;
+    color: #4b1407;}
+
+#Flower-Of-The-Month p {
+    font-size: 2rem;
+    color: #333;}
+
+#Flower-Of-The-Month .flower-btn {
+    display: inline-block;
+    padding: 10px 60px;
+    background-color: #cb8589;
+    width: fit-content;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;}
+
+#Flower-Of-The-Month .flower-btn:hover {
+    background-color: #6f1c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);}
+
+#Flower-Of-The-Month img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;}
+
+
+/*---------------------------------------------------------------------Club-Members-Reviews---------------------shahad*/
+
+#Club-Members-Reviews {
+    flex-direction: row ;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #a5a58d ;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;}
+
+#Club-Members-Reviews h2 {
+    margin-top: 20px;
+    font-size: 2.2rem;
+    color: #6b705c;
+    width: 100%;
+    font-family: Georgia, serif;}
+
+#Club-Members-Reviews .home-Comment {
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center ; 
+    gap: 10px;
+    background-color: #ffffff;
+    text-align: left;        
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+#Club-Members-Reviews .home-Comment .image-box {
+    margin-top: -10px;
+    position: relative;         
+    width: 230px;
+    height: 180px;}
+
+#Club-Members-Reviews .home-Comment img {
+    display: block;
+    width: 230px;
+    height: 180px;
+    object-fit: cover;}
+
+#Club-Members-Reviews .home-Comment .Star-rating {
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    bottom: 8px;          
+    right: 5px;
+    z-index: 2;
+    border-radius: 25px;
+    object-fit: cover;}
+     
+#Club-Members-Reviews h4 {
+    color: #757575;
+    font-weight: 100 ;
+    margin-top: auto;}
+
+
+
+/*---------------------------------------------------------------------flower-of-the-month-hero---------------------shahad*/
+
+.flower-of-the-month-hero {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background-image: url('photos/flower-of-the-month-background.jpeg');
+        
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;}
+
+
+.flower-of-the-month-hero h2 {
+    font-size: 5rem;                    
+    font-weight: 800;
+    line-height: 1.1;
+    padding: 10px 4%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #460f38;}
+
+.flower-of-the-month-hero h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #222;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+.flower-of-the-month-hero p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 550px; 
+    color: #e2d087;
+    padding: 10px 20px;
+    line-height: 1.6;
+    background-color: #460f38a5;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+
+/*---------------------------------------------------------------------about-flower---------------------shahad*/
+.about-flower {
+    display: flex;                  
+    flex-direction: row;            
+    justify-content: space-between; 
+    align-items: center;            
+    gap: 40px;                      
+    width: 100%;
+    padding: 60px 8%;   }            
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;                      
+    flex: 1;   }                     
+
+.about-flower h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111;}
+
+.about-flower p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #444;
+    padding: 0 20px;}
+
+.about-flower img {
+    flex: 1;                        
+    max-width: 450px;               
+    width: 100%;
+    height: 370px;
+    object-fit: cover;}
+
+/*---------------------------------------------------------------------styling-instructions---------------------shahad*/
+.styling-instructions {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 8%;
+    width: 100%;
+    background-color: #84296128;}
+
+.styling-instructions .images-left,
+.styling-instructions .images-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;}
+
+.styling-instructions .content-center {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left ;}
+
+.styling-instructions h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #111;}
+
+.styling-instructions p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #444;}
+
+.styling-instructions img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background-color: #e0e0e0;}
+
+/*---------------------------------------------------------------------Interested-in-workshop---------------------shahad*/
+
+.Interested-in-workshop {
+    padding: 70px 20px;
+    text-align: center;
+    width: 100%;}
+
+.Interested-in-workshop h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+
+.Interested-in-workshop a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #6b705c;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;}
+
+.Interested-in-workshop a:hover {
+    color: #111;
+    font-size: 1.7rem;
+    transform: translateY(-6px);}
+
+.Interested-in-workshop a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border: none;
+    background: transparent;}
+
+
+/*---------------------------------------------------------------------Rate-Your-Experience----------------------------shahad*/
+.evaluation-container {
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    margin-top: -20px;}
+
+.form-section {
+    flex: 1;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.form-section h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 30px;
+    font-family: Georgia, serif;}
+
+.form-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #796465; }
+
+.in-a-row {
+    display: flex;
+    align-items: center;
+    gap: 20px; }
+
+.form-group select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    flex: 1;
+    max-width: 280px; }
+
+.to-rate-in-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 4px;}
+
+.to-rate-in-stars .star {
+    font-size: 1.8rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease;}
+
+.to-rate-in-stars .star:hover,
+.to-rate-in-stars .star:hover ~ .star,
+.to-rate-in-stars input:checked ~ .star {
+    color: #ffda71;}
+
+.form-group input[type="text"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;}
+
+.photo-upload-box {
+    width: 260px;
+    height: 120px;
+    border: 2px dashed #b5b5b5;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    cursor: pointer;
+    margin-right: 50px;
+    transition: border-color 0.2s;}
+
+.photo-upload-box:hover {
+    border-color: #333;}
+
+.upload-area {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;}
+
+.photo-upload-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;}
+
+.to-rate-in-stars input[type="radio"] {
+    display: none;}
+
+.photo-upload-box input[type="file"] {
+    display: none ;}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 80px;}
+
+.btn-cancel, .btn-submit {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;}
+
+.btn-cancel {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;}
+
+.btn-submit {
+    background-color: #6b705c;
+    color: #fff;}
+
+.btn-submit:hover {
+    background-color: #b7b7a4;}
+
+.btn-cancel:hover:hover{
+    background-color: #b7b7a4;}
+
+
+.Workshop-Evaluation-background {
+    flex: 1;
+    background-color: #dcdcdc;
+    height: 520px;
+    display: flex;}
+
+.Workshop-Evaluation-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;}
 
 /*-------------------------------------------------------------------------------------------------------------shahad*/
 
