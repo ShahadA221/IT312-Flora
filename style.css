@@ -741,6 +741,7 @@ footer #contact-us strong {
 
 /*-------------------------------------------------------------------------------------------------------------shahad*/
 
+
 /*===================================================================================================================================================================================alya*/
 
 
@@ -760,7 +761,7 @@ footer #contact-us strong {
 /*----------------------------------------------------------Hero----------------------------alya*/
  
 .hero {
-    background: linear-gradient(135deg, #fbe3d3 0%, #f7d5c1 55%, #f0c4ad 100%);
+    background: #FFE8D6;
     color: #4b1407;
     padding: 0 0 64px;}
  
@@ -789,7 +790,7 @@ footer #contact-us strong {
 .hero-flowers {
     position: relative;
     overflow: hidden;
-    background: #f7d5c1;}
+    background: #FFE8D6;}
  
 .hero-flowers::before {
     content: "";
@@ -829,7 +830,7 @@ footer #contact-us strong {
     gap: 8px;
     min-height: 130px;
     padding: 20px;
-    border: 1px solid #dccbbd;
+    border: 1px solid #B7B7A4;
     border-radius: 28px;
     text-decoration: none;
     font-size: 1.5rem;
@@ -845,7 +846,7 @@ footer #contact-us strong {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(75, 20, 7, 0.18);}
  
-/* the pink circle with the + or star inside each link box */
+/* the tan circle with the + or star inside each link box */
 .member-link-icon {
     display: flex;
     align-items: center;
@@ -853,7 +854,7 @@ footer #contact-us strong {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: #f7d5c1;
+    background: #D7B29D;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
@@ -872,7 +873,10 @@ footer #contact-us strong {
  
 .requests h2 {
     font-size: 1.8rem;
-    margin: 0 0 14px;}
+    margin: 0 0 14px;
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #CB8589;}
  
 .table-wrap { overflow-x: auto; }
  
@@ -884,13 +888,13 @@ footer #contact-us strong {
 .requests th,
 .requests td {
     padding: 12px 14px;
-    border: 1px solid #dccbbd;}
+    border: none;}
  
 .requests thead th {
-    background: #f7d5c1;
+    background: #A5A58D;
     color: #4b1407;}
  
-.requests tbody tr:hover { background: #fdf3ec; }
+.requests tbody tr:hover { background: #FFE8D6; }
  
 /* small coloured label in the Status column (Pending / Completed / Declined) */
 .status {
