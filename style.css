@@ -776,6 +776,11 @@ footer #contact-us strong {
  
 .hero-text p {
     font-size: 1.2rem; }
+
+/* Workshops page banner only (Member Dashboard uses .hero-flowers) */
+.hero:not(.hero-flowers) {
+    background: #ffe8d6;
+    color: #796465;}
  
 /*---------------------------------------------------------Hero-Flowers-(Member-Dashboard)---------------------alya*/
  
@@ -912,13 +917,13 @@ footer #contact-us strong {
 .sort-label {
     font-weight: bold;
     font-size: 1.05rem;
-    color: #4b1407;}
+    color: #796465;}
  
 .sort-bar select {
     padding: 8px 18px;
     font: inherit;
     color: #333322;
-    border: 2px solid #616247;
+    border: 2px solid #A5A58D;
     border-radius: 999px;
     background: #fff;
     cursor: pointer;}
@@ -929,7 +934,7 @@ footer #contact-us strong {
     justify-content: center;
     gap: 40px 32px;
     padding: 48px max(24px, calc((100% - 1000px) / 2));
-    background-color: #f7d5c1;}
+    background-color: #A5A58D;}
  
 /* one workshop box: photo, name, description, price and Join button */
 .workshop-card {
@@ -938,7 +943,7 @@ footer #contact-us strong {
     flex-direction: column;
     border-radius: 18px;
     overflow: hidden;
-    background: #ffffff;
+    background: #FFE8D6;
     box-shadow: 0 4px 14px rgba(75, 20, 7, 0.15);
     transition: transform 0.25s ease, box-shadow 0.25s ease;}
  
@@ -969,19 +974,19 @@ footer #contact-us strong {
     flex: 1;}
  
 .card-footer {
-    border-top: 1px solid #dccbbd;
+    border-top: 1px solid #B7B7A4;
     padding-top: 12px;
     text-align: center;}
  
 .price {
     font-weight: 600;
-    color: #616247;}
+    color: #6B705C;}
  
 .join-btn {
     display: block;
     padding: 9px;
-    background: #f7d5c1;
-    color: #4b1407;
+    background: #CB8589;
+    color: #fff;
     border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
@@ -993,7 +998,7 @@ footer #contact-us strong {
     display: inline-block;
     transition: transform 0.2s;}
  
-.join-btn:hover { background: #616247; color: #fff; }
+.join-btn:hover { background: #6B705C; color: #fff; }
  
 .join-btn:hover::after { transform: translateX(4px); }
  
@@ -1006,8 +1011,6 @@ footer #contact-us strong {
 .workshop-card img.pos-garden       { object-position: center 40%; }
   
 /*-------------------------------------------------------------------------------------------------------------alya*/
-
-
 
 /*======================================================================================================================================================================================tala*/
 
