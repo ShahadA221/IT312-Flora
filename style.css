@@ -840,8 +840,8 @@ footer #contact-us strong {
     transition: background 0.2s, border-color 0.2s, transform 0.25s, box-shadow 0.25s;}
  
 .member-link:hover {
-    background: #f7d5c1;
-    border-color: #616247;
+    background: #FFE8D6;
+    border-color: #A5A58D;
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(75, 20, 7, 0.18);}
  
