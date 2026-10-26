@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flora - Manager Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,10 @@
     <!-- *************************************************Header************************************************* -->
     <header>
         <div>
-            <img src="photos/Flora_logo.jpeg" alt="Flora Logo" width="100" height="50">
+            <img src="photos/Flora_logo.jpeg"
+                 alt="Flora Logo"
+                 width="100"
+                 height="50">
 
             <ul>
                 <li>
@@ -21,19 +24,21 @@
                 </li>
 
                 <li>
-                    <a href="">Workshops</a>
+                    <a href="Workshops.html">Workshops</a>
                 </li>
 
                 <li>
-                    <a href="">Member Dashboard</a>
+                    <a href="Member_Dashboard.html">Member Dashboard</a>
                 </li>
 
                 <li>
-                    <a href="Manager_Dashboard.html">Manager Dashboard</a>
+                    <a href="Manager_Dashboard.html"
+                       class="active"
+                       aria-current="location">Manager Dashboard</a>
                 </li>
 
                 <li>
-                    <a href="">About Us</a>
+                    <a href="About_Us.html">About Us</a>
                 </li>
             </ul>
         </div>
@@ -44,17 +49,32 @@
         <!-- *************************************************Page title and breadcrumb************************************************* -->
         <section class="manager-dashboard">
 
-            <nav class="breadcrumb">
-                <a href="index.html">Home</a>
-                &gt;
-                <span>Manager Dashboard</span>
-            </nav>
+            <div class="manager-hero-inner">
 
-            <h1>Manager Dashboard</h1>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
 
-            <p>
-                Welcome back! Here's an overview of your club.
-            </p>
+                        <li>
+                            <a href="Manager_Dashboard.html"
+                               aria-current="page">Manager Dashboard</a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <div class="manager-hero-text">
+
+                    <h1>Manager Dashboard</h1>
+
+                    <p>
+                        Welcome back! Here's an overview of your club.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
@@ -67,118 +87,110 @@
 
                 <h2>Add New Workshop</h2>
 
-                <p>Create a new workshop for your club.</p>
-
             </a>
 
-            <a href="Manage_Team.html" class="manager-card">
+            <a href="Manage_Activity_Leaders_and_Instructors.html"
+               class="manager-card">
 
-                <img src="photos/team-icon.jpg"
+                <img src="photos/team-icon-brown-rounded.png"
                      alt=""
-                     width="40"
-                     height="40">
+                     width="64"
+                     height="64">
 
                 <h2>Manage Activity Leaders &amp; Instructors</h2>
-
-                <p>View, add or manage your club team.</p>
 
             </a>
 
         </section>
-		
-		
 
         <!--************************************************* Manager's workshops************************************************* -->
-<section class="my-workshops">
+        <section class="my-workshops">
 
-    <h2>My Workshops</h2>
+            <h2>My Workshops</h2>
 
-    <table>
+            <table>
 
-        <thead>
-            <tr>
-                <th colspan="2">Workshop Name</th>
-            </tr>
-        </thead>
+                <thead>
+                    <tr>
+                        <th colspan="2">Workshop Name</th>
+                    </tr>
+                </thead>
 
-        <tbody>
+                <tbody>
 
-            <tr>
-                <td>
-                    <img src="photos/my-first-bouquet.jpg"
-                         alt="My First Bouquet workshop"
-                         width="80"
-                         height="60">
-                </td>
+                    <tr>
+                        <td>
+                            <img src="photos/my-first-bouquet.jpg"
+                                 alt="My First Bouquet workshop"
+                                 width="80"
+                                 height="60">
+                        </td>
 
-                <td>My First Bouquet</td>
-            </tr>
+                        <td>My First Bouquet</td>
+                    </tr>
 
-            <tr>
-                <td>
-                    <img src="photos/family-in-bloom.jpg"
-                         alt="Family in Bloom workshop"
-                         width="80"
-                         height="60">
-                </td>
+                    <tr>
+                        <td>
+                            <img src="photos/family-in-bloom.jpg"
+                                 alt="Family in Bloom workshop"
+                                 width="80"
+                                 height="60">
+                        </td>
 
-                <td>Family in Bloom</td>
-            </tr>
+                        <td>Family in Bloom</td>
+                    </tr>
 
-            <tr>
-                <td>
-                    <img src="photos/pressed-and-framed.jpg"
-                         alt="Pressed &amp; Framed workshop"
-                         width="80"
-                         height="60">
-                </td>
+                    <tr>
+                        <td>
+                            <img src="photos/pressed-and-framed.jpg"
+                                 alt="Pressed &amp; Framed workshop"
+                                 width="80"
+                                 height="60">
+                        </td>
 
-                <td>Pressed &amp; Framed</td>
-            </tr>
+                        <td>Pressed &amp; Framed</td>
+                    </tr>
 
-            <tr>
-                <td>
-                    <img src="photos/bridal-blossom.jpg"
-                         alt="Bridal Blossom workshop"
-                         width="80"
-                         height="60">
-                </td>
+                    <tr>
+                        <td>
+                            <img src="photos/bridal-blossom.jpg"
+                                 alt="Bridal Blossom workshop"
+                                 width="80"
+                                 height="60">
+                        </td>
 
-                <td>Bridal Blossom</td>
-            </tr>
+                        <td>Bridal Blossom</td>
+                    </tr>
 
-            <tr>
-                <td>
-                    <img src="photos/flower-storytelling.jpg"
-                         alt="Flower Storytelling workshop"
-                         width="80"
-                         height="60">
-                </td>
+                    <tr>
+                        <td>
+                            <img src="photos/flower-storytelling.jpg"
+                                 alt="Flower Storytelling workshop"
+                                 width="80"
+                                 height="60">
+                        </td>
 
-                <td>Flower Storytelling</td>
-            </tr>
+                        <td>Flower Storytelling</td>
+                    </tr>
 
-            <tr>
-                <td>
-                    <img src="photos/garden-to-vase.jpg"
-                         alt="From Garden to Vase workshop"
-                         width="80"
-                         height="60">
-                </td>
+                    <tr>
+                        <td>
+                            <img src="photos/garden-to-vase.jpg"
+                                 alt="From Garden to Vase workshop"
+                                 width="80"
+                                 height="60">
+                        </td>
 
-                <td>From Garden to Vase</td>
-            </tr>
+                        <td>From Garden to Vase</td>
+                    </tr>
 
-        </tbody>
+                </tbody>
 
-    </table>
+            </table>
 
-</section>
+        </section>
 
     </main>
-	
-	
-	
 
     <!-- *************************************************Footer Section************************************************* -->
     <footer>
@@ -205,7 +217,7 @@
 
         <div>
 
-            <img src="Flora_logo.jpeg"
+            <img src="photos/Flora_logo.jpeg"
                  alt="Flora Logo"
                  width="100"
                  height="50">
