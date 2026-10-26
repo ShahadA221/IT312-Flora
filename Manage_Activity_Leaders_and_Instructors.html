@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flora - Manage Activity Leaders &amp; Instructors</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,19 +22,15 @@
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-
                 <li>
                     <a href="Workshops.html">Workshops</a>
                 </li>
-
                 <li>
                     <a href="Member_Dashboard.html">Member Dashboard</a>
                 </li>
-
                 <li>
-                    <a href="Manager_Dashboard.html">Manager Dashboard</a>
+                    <a href="Manager_Dashboard.html" class="active" aria-current="location">Manager Dashboard</a>
                 </li>
-
                 <li>
                     <a href="About_Us.html">About Us</a>
                 </li>
@@ -46,16 +43,15 @@
         <!-- ******************** Page Introduction ******************** -->
         <section class="manage-team">
 
-            <nav class="breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="index.html">Home</a>
                 &gt;
                 <a href="Manager_Dashboard.html">Manager Dashboard</a>
                 &gt;
-                <span>Manage Activity Leaders &amp; Instructors</span>
+                <span aria-current="page">Manage Activity Leaders &amp; Instructors</span>
             </nav>
 
             <h1>Manage Activity Leaders &amp; Instructors</h1>
-
             <p>View, add or manage your club team.</p>
 
         </section>
@@ -68,7 +64,6 @@
             <form method="get">
 
                 <table>
-
                     <thead>
                         <tr>
                             <th>Select</th>
@@ -78,7 +73,6 @@
                     </thead>
 
                     <tbody>
-
                         <tr>
                             <td>
                                 <input type="checkbox"
@@ -144,9 +138,7 @@
                                 </label>
                             </td>
                         </tr>
-
                     </tbody>
-
                 </table>
 
                 <button type="submit">Delete Selected</button>
@@ -159,6 +151,10 @@
         <section class="add-team-member">
 
             <h2>Add New Activity Leader / Instructor</h2>
+
+            <div class="team-floral-divider" aria-hidden="true">
+                <span></span>
+            </div>
 
             <p>
                 Fill in the information below to add a new activity
@@ -199,13 +195,14 @@
                         </div>
 
                         <fieldset>
-                            <legend>Role</legend>
+                            <legend>Role *</legend>
 
                             <div>
-                                <input type="checkbox"
+                                <input type="radio"
                                        id="activity-leader"
                                        name="role"
-                                       value="activity-leader">
+                                       value="activity-leader"
+                                       required>
 
                                 <label for="activity-leader">
                                     Activity Leader
@@ -213,16 +210,16 @@
                             </div>
 
                             <div>
-                                <input type="checkbox"
+                                <input type="radio"
                                        id="instructor"
                                        name="role"
-                                       value="instructor">
+                                       value="instructor"
+                                       required>
 
                                 <label for="instructor">
                                     Instructor
                                 </label>
                             </div>
-
                         </fieldset>
 
                     </div>
@@ -281,27 +278,23 @@
     <footer>
 
         <section id="Social-Media">
-
             <h3>Social Media</h3>
 
             <ul>
                 <li>
                     <a href="https://instagram.com">Instagram</a>
                 </li>
-
                 <li>
                     <a href="https://facebook.com">FaceBook</a>
                 </li>
-
                 <li>
                     <a href="https://x.com">X</a>
                 </li>
             </ul>
-
         </section>
 
         <div>
-            <img src="Flora_logo.jpeg"
+            <img src="photos/Flora_logo.jpeg"
                  alt="Flora Logo"
                  width="100"
                  height="50">
@@ -310,24 +303,20 @@
         </div>
 
         <section id="contact-us">
-
             <h3>Contact Us</h3>
 
             <ul>
                 <li>
                     <strong>Phone:</strong> +966 456 789
                 </li>
-
                 <li>
                     <strong>Email:</strong> info@flora.com
                 </li>
-
                 <li>
                     <strong>Location:</strong>
                     Riyadh, Kingdom of Saudi Arabia
                 </li>
             </ul>
-
         </section>
 
     </footer>
