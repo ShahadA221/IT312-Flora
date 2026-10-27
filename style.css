@@ -1057,7 +1057,7 @@ main:has(.member-links) {
 
 /*==================== Shared Styles for Manager and Team Pages — tala ====================*/
 
-/*------------------------------------------------shared-text---------------------tala*/
+/*------------------------------------------------text---------------------tala*/
 
 .manager-page,
 .team-page {
@@ -1098,8 +1098,7 @@ main:has(.member-links) {
 
 /*==================== PAGE 1: Manager Dashboard — tala ====================*/
 
-/*------------------------------------------------Manager-Hero---------------------tala*/
-
+/*------------------------------------------Manager Dashboard Heading--------------------tala*/
 .manager-page .manager-dashboard {
     position: relative;
     z-index: 0;
@@ -1117,9 +1116,10 @@ main:has(.member-links) {
 
 .manager-page .manager-dashboard p {
     font-size: 1.2rem;
+	color: #4b1407;
 }
 
-/*------------------------------------------------Manager-Actions---------------------tala*/
+/*------------------------------------------------Manager Actions---------------------tala*/
 
 .manager-page .manager-actions {
     display: flex;
@@ -1203,7 +1203,7 @@ main:has(.member-links) {
     box-shadow: 0 12px 24px rgba(75, 20, 7, 0.18);
 }
 
-/*------------------------------------------------My-Workshops---------------------tala*/
+/*------------------------------------------------My Workshops---------------------tala*/
 
 .manager-page .my-workshops {
     max-width: 820px;
@@ -1256,7 +1256,7 @@ main:has(.member-links) {
 
 /*==================== PAGE 2: Manage Activity Leaders & Instructors — tala ====================*/
 
-/*------------------------------------------------Manage-Team-Hero---------------------tala*/
+/*------------------------------------------------Manage Team Heading---------------------tala*/
 
 .team-page .manage-team {
     padding: 20px 24px 48px;
@@ -1275,7 +1275,7 @@ main:has(.member-links) {
     font-size: 1rem;
 }
 
-/*------------------------------------------------Current-Instructors---------------------tala*/
+/*------------------------------------------------Current Instructors---------------------tala*/
 
 .team-page .current-team {
     max-width: 820px;
@@ -1329,7 +1329,7 @@ main:has(.member-links) {
     background-color: #FFE8D6;
 }
 
-/*------------------------------------------------Add-Leader-Instructor---------------------tala*/
+/*------------------------------------------------Add Leader Instructor---------------------tala*/
 
 .team-page .add-team-member {
     max-width: 860px;
@@ -1361,7 +1361,7 @@ main:has(.member-links) {
     box-shadow: 0 6px 18px rgba(75, 20, 7, 0.12);
 }
 
-/*------------------------------------------------Team-Form-Columns---------------------tala*/
+/*------------------------------------------------Team Form Columns---------------------tala*/
 
 .team-page .form-columns {
     display: flex;
@@ -1403,7 +1403,7 @@ main:has(.member-links) {
     border: 1px dashed #dccbbd;
 }
 
-/*------------------------------------------------Role-Selection---------------------tala*/
+/*------------------------------------------------Role Selection---------------------tala*/
 
 .team-page .add-team-member fieldset {
     border: 1px solid #dccbbd;
@@ -1426,7 +1426,7 @@ main:has(.member-links) {
     margin-right: 8px;
 }
 
-/*------------------------------------------------Manage-Team-Buttons---------------------tala*/
+/*------------------------------------------------Manage Team Buttons---------------------tala*/
 
 .team-page .current-team button,
 .team-page .add-team-member button {
@@ -1455,7 +1455,7 @@ main:has(.member-links) {
 
 /*==================== PAGE 3: Add New Workshop — tala ====================*/
 
-/*------------------------------------------------shared-text---------------------tala*/
+/*------------------------------------------------text---------------------tala*/
 
 .add-workshop-page {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1466,7 +1466,7 @@ main:has(.member-links) {
     display: flow-root;
 }
 
-/*------------------------------------------------Page-Introduction---------------------tala*/
+/*------------------------------------------------Page Introduction---------------------tala*/
 
 .add-workshop-page .workshop-introduction {
     margin: 0 auto;
@@ -1507,7 +1507,7 @@ main:has(.member-links) {
     font-style: italic;
 }
 
-/*------------------------------------------------Workshop-Form---------------------tala*/
+/*------------------------------------------------Workshop Form---------------------tala*/
 
 .add-workshop-page .new-workshop-form {
     margin: 0;
@@ -1518,7 +1518,7 @@ main:has(.member-links) {
     box-shadow: 0 6px 18px rgba(75, 20, 7, 0.12);
 }
 
-/*------------------------------------------------Workshop-Form-Columns---------------------tala*/
+/*------------------------------------------------Workshop Form Columns---------------------tala*/
 
 .add-workshop-page .workshop-form-columns {
     display: flex;
@@ -1532,7 +1532,7 @@ main:has(.member-links) {
     min-width: 0;
 }
 
-/*------------------------------------------------Workshop-Form-Labels---------------------tala*/
+/*------------------------------------------------Workshop Form Labels---------------------tala*/
 
 .add-workshop-page .workshop-field {
     margin-bottom: 28px;
@@ -1546,7 +1546,7 @@ main:has(.member-links) {
     font-weight: bold;
 }
 
-/*------------------------------------------------Inputs-Description---------------------tala*/
+/*------------------------------------------------Inputs Description---------------------tala*/
 
 .add-workshop-page .workshop-field input,
 .add-workshop-page .workshop-field textarea {
@@ -1568,7 +1568,7 @@ main:has(.member-links) {
     resize: vertical;
 }
 
-/*------------------------------------------------Image-Upload---------------------tala*/
+/*------------------------------------------------Image  Upload---------------------tala*/
 
 .add-workshop-page .workshop-field input[type="file"] {
     min-height: 190px;
@@ -1577,7 +1577,7 @@ main:has(.member-links) {
     background-color: #fcfbf7;
 }
 
-/*------------------------------------------------Field-Effects---------------------tala*/
+/*------------------------------------------------Field Effects---------------------tala*/
 
 .add-workshop-page .workshop-field input:hover,
 .add-workshop-page .workshop-field textarea:hover {
@@ -1590,7 +1590,7 @@ main:has(.member-links) {
     border-color: #4b1407;
 }
 
-/*------------------------------------------------Submit-Button---------------------tala*/
+/*------------------------------------------------Submit Button---------------------tala*/
 
 .add-workshop-page .workshop-submit {
     text-align: left;
@@ -1968,6 +1968,48 @@ main:has(.member-links) {
     }
 }
 
+/* Align manager dashboard cards */
+.manager-page .manager-card {
+    display: grid;
+    grid-template-rows: 64px 48px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 8px;
+
+    height: 160px;
+    min-height: 160px;
+    padding: 20px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Keep card labels consistent */
+.manager-page .manager-card h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    margin: 0;
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 1;
+}
+
+/* Keep both icons the same size */
+.manager-page .manager-icon,
+.manager-page .manager-card img {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    flex-shrink: 0;
+}
 
 /*======================================================================================================================================================================================tala*/
 
