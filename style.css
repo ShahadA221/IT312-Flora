@@ -81,12 +81,7 @@ html, body {
 .breadcrumb a:hover {
     border-bottom: 2px solid #333322;
     color: #333322;}
-
-
-
-/*--------------------------------------------------------------footer---------------------ALL PAGES*/
-
-    
+/*------------------------- FOOTER - ALL PAGES -------------------------*/
 
 footer {
     display: flex;
@@ -98,18 +93,14 @@ footer {
     color: #333322;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.8;
-    gap: 80px;
+    gap: 30px;
 }
-
-/*------------------------------------------------Footer-Headings---------------------*/
 
 footer h3 {
     color: #4b1407;
     font-size: 1rem;
-    margin-bottom: 8px;
+    margin: 0 0 8px;
 }
-
-/*------------------------------------------------Footer-Lists---------------------*/
 
 footer ul {
     list-style-type: none;
@@ -122,12 +113,12 @@ footer li {
     margin-bottom: 4px;
 }
 
-/*------------------------------------------------Social-Media---------------------*/
+/*------------------------- Social Media -------------------------*/
 
 footer #Social-Media {
     flex: 1;
     text-align: left;
-    padding-right: 15px;
+    padding-left: 20px;
 }
 
 footer #Social-Media a {
@@ -140,44 +131,82 @@ footer #Social-Media a:hover {
     text-decoration: underline;
 }
 
-/*------------------------------------------------Footer-Logo-Copyright---------------------*/
+/*------------------------- Footer Logo -------------------------*/
 
-footer div {
+footer > div {
     flex: 1;
     text-align: center;
-    padding: 0 15px;
+    padding: 0;
+    margin-left: 138px;
 }
-
-footer div img {
+footer > div img {
     display: block;
     width: 120px;
     height: auto;
     margin: 0 auto 12px;
 }
 
-footer div p {
+footer > div p {
     border-top: 1px solid #dccbbd;
     padding-top: 10px;
     color: #616247;
     font-size: 0.75rem;
 }
 
-/*------------------------------------------------Contact-Us---------------------*/
+/*------------------------- Contact Us -------------------------*/
 
 footer #contact-us {
     flex: 1;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 200px;
 }
 
 footer #contact-us strong {
     color: #616247;
 }
 
+/*------------------------- Footer Icons -------------------------*/
 
+footer #Social-Media li::before,
+footer #contact-us li::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+/* Social Media Icons */
 
+footer #Social-Media li:nth-child(1)::before {
+    background-image: url("photos/flora_footer_icons/instagram.svg");
+}
 
+footer #Social-Media li:nth-child(2)::before {
+    background-image: url("photos/flora_footer_icons/facebook.svg");
+}
+
+footer #Social-Media li:nth-child(3)::before {
+    background-image: url("photos/flora_footer_icons/x.svg");
+}
+
+/* Contact Us Icons */
+
+footer #contact-us li:nth-child(1)::before {
+    background-image: url("photos/flora_footer_icons/phone.svg");
+}
+
+footer #contact-us li:nth-child(2)::before {
+    background-image: url("photos/flora_footer_icons/email.svg");
+}
+
+footer #contact-us li:nth-child(3)::before {
+    background-image: url("photos/flora_footer_icons/location.svg");
+}
 /*---------------------------------------- Shahad's pages: HOME / FLOWER OF THE MONTHE / Workshop Evaluation  ----------------------------------------*/
 
 /*----------------------------------------------------------HOME-Intro----------------------------shahad*/
@@ -1942,15 +1971,27 @@ main:has(.member-links) {
 
 /*======================================================================================================================================================================================tala*/
 
-}
+
 /*======================================== Norah's Pages ========================================*/
 
 /*---------------------------------------- Request to Join ----------------------------------------*/
 
+.join-workshop-page {
+    background-color: #fdfbf5;
+}
 
+.join-workshop-page .join-workshop-hero {
+    background: linear-gradient(
+        135deg,
+        #FBE1CF 0%,
+        #f7d8c3 50%,
+        #f7c9ab 100%
+    );
+    padding-bottom: 28px;
+}
 .request-subtitle {
-    color: #4b5841;
-    font-style:italic;
+    color: #524141;
+    font-style: italic;
 }
 
 .join-workshop-section {
@@ -1959,7 +2000,7 @@ main:has(.member-links) {
     padding: 55px;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #333322;
-    background: linear-gradient(to bottom, #fcf4f0, #fffbfa);
+    background: #fbf0e3;
     border-radius: 28px;
 }
 
@@ -1975,7 +2016,7 @@ main:has(.member-links) {
     text-align: center;
     color: #6e1111;
     font-size: 1.8rem;
-    font-style:italic;
+    font-style: italic;
 }
 
 .join-workshop-floral-divider {
@@ -2015,9 +2056,7 @@ main:has(.member-links) {
     animation: request-rise 0.5s ease;
 }
 
-
 /* Form Animation */
-
 @keyframes request-rise {
     from {
         opacity: 0;
@@ -2104,8 +2143,6 @@ main:has(.member-links) {
     font-size: 0.9rem;
 }
 
-
-
 .join-workshop-form input[type="submit"] {
     width: 180px;
     margin: 10px auto 0;
@@ -2125,10 +2162,6 @@ main:has(.member-links) {
     background-color: #4b1407;
     transform: translateY(-2px);
 }
-
-
-
-
 /*---------------------------------------- About Us ----------------------------------------*/
 
 .about-page {
@@ -2321,7 +2354,7 @@ transition: transform 0.3s ease;
 }
 
 .about-page .instructor-card {
-    flex: 0 0 30%;
+   flex: 0 0 40%;
 
     box-sizing: border-box;
 

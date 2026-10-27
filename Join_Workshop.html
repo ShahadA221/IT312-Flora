@@ -8,19 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="join-workshop-page">
 
     <!-- ************************************* Header ************************************* -->
+
     <header>
         <div>
             <a href="index.html">
-                <img src="photos/Flora.png" alt="Flora Logo">
+                <img src="photos/Flora_logo.jpeg" alt="Flora Logo">
             </a>
 
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Workshops.html">Workshops</a></li>
-                <li><a href="Member_Dashboard.html">Member Dashboard</a></li>
+                <li>
+                    <a class="active"
+                       href="Member_Dashboard.html"
+                       aria-current="location">
+                        Member Dashboard
+                    </a>
+                </li>
                 <li><a href="Manager_Dashboard.html">Manager Dashboard</a></li>
                 <li><a href="About_Us.html">About Us</a></li>
             </ul>
@@ -31,11 +38,12 @@
     <main>
 
         <!-- ************************************* Page Introduction ************************************* -->
-        <section class="hero hero-compact">
+
+        <section class="hero hero-compact join-workshop-hero">
 
             <div class="hero-inner">
 
-                <nav class="breadcrumb">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
                     <ol>
                         <li>
                             <a href="index.html">Home</a>
@@ -71,6 +79,7 @@
 
 
         <!-- ************************************* Request Form ************************************* -->
+
         <section class="join-workshop-section">
 
             <div class="join-workshop-intro">
@@ -165,68 +174,62 @@
 
 
     <!-- ************************************* Footer ************************************* -->
+
     <footer>
 
         <section id="Social-Media">
+
             <h3>Social Media</h3>
 
             <ul>
                 <li>
-                    <a href="https://instagram.com">
-                        <img src="photos/flora_footer_icons/instagram.svg" alt="">
-                        Instagram
-                    </a>
+                    <a href="https://instagram.com">Instagram</a>
                 </li>
 
                 <li>
-                    <a href="https://facebook.com">
-                        <img src="photos/flora_footer_icons/facebook.svg" alt="">
-                        Facebook
-                    </a>
+                    <a href="https://facebook.com">FaceBook</a>
                 </li>
 
                 <li>
-                    <a href="https://x.com">
-                        <img src="photos/flora_footer_icons/x.svg" alt="">
-                        X
-                    </a>
+                    <a href="https://x.com">X</a>
                 </li>
             </ul>
+
         </section>
 
 
-        <div class="footer-logo">
-            <img src="photos/Flora.png" alt="Flora Logo">
+        <div>
+
+            <img src="photos/Flora_logo.jpeg" alt="Flora Logo">
+
+            <p>Copyright &copy; Flora</p>
+
         </div>
 
 
         <section id="contact-us">
+
             <h3>Contact Us</h3>
 
             <ul>
                 <li>
-                    <img src="photos/flora_footer_icons/phone.svg" alt="">
-                    +966 50 123 4567
+                    <strong>Phone:</strong> +966 456 789
                 </li>
 
                 <li>
-                    <img src="photos/flora_footer_icons/email.svg" alt="">
-                    flora.club@example.com
+                    <strong>Email:</strong> info@flora.com
                 </li>
 
                 <li>
-                    <img src="photos/flora_footer_icons/location.svg" alt="">
-                    Riyadh, Saudi Arabia
+                    <strong>Location:</strong>
+                    Riyadh, Kingdom of Saudi Arabia
                 </li>
             </ul>
+
         </section>
-
-
-        <p class="copyright">
-            Copyright &copy; Flora
-        </p>
 
     </footer>
 
 </body>
+
 </html>
