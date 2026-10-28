@@ -911,26 +911,42 @@ main:has(.member-links) {
     padding-bottom: 4px;
     border-bottom: 3px solid #CB8589;}
  
-.table-wrap { overflow-x: auto; }
- 
+.table-wrap {
+    overflow-x: auto;
+    padding: 0 24px 32px;
+    margin: 0 -24px -32px;}
+
 .requests table {
     width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    background: #fff; }
- 
-.requests th,
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #d8d9c9;
+    border-radius: 22px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(75, 20, 7, 0.08);}
+
+.requests th {
+    padding: 18px 22px;
+    border: 0;
+    background-color: #e5e7db;
+    color: #4d563f;
+    text-align: left;
+    letter-spacing: 0.02em;}
+
 .requests td {
-    padding: 12px 14px;
-    border: 1px solid #6B705C;}
+    padding: 16px 22px;
+    border: 0;
+    border-top: 1px solid #e6dfd5;
+    background-color: #fffdf9;
+    font-weight: bold;
+    color: #596046;
+    transition: background-color 0.25s ease;}
+
+.requests tbody tr:nth-child(even) td { background-color: #faf7f1; }
+
+.requests tbody tr:hover td { background-color: #f6e9e2; }
  
-.requests thead th {
-    background: #A5A58D;
-    color: #4b1407;}
- 
-.requests tbody tr:hover { background: #FFE8D6; }
- 
-/* small coloured label in the Status column (Pending / Completed / Declined) */
 .status {
     display: inline-block;
     min-width: 96px;
