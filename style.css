@@ -943,6 +943,14 @@ main:has(.member-links) {
     color: #596046;
     transition: background-color 0.25s ease;}
 
+.requests th,
+.requests td {
+    border-left: 1px solid #d8d9c9;}
+
+.requests th:first-child,
+.requests td:first-child {
+    border-left: none;}
+
 .requests tbody tr:nth-child(even) td { background-color: #faf7f1; }
 
 .requests tbody tr:hover td { background-color: #f6e9e2; }
