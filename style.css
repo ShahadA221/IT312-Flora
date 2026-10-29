@@ -2049,14 +2049,14 @@ main:has(.member-links) {
 .join-workshop-page .join-workshop-hero {
     background: linear-gradient(
         135deg,
-        #FBE1CF 0%,
-        #f7d8c3 50%,
-        #f7c9ab 100%
+        #FFE8D6 0%,
+        #f8dece 50%,
+        #fbd4bb 100%
     );
     padding-bottom: 28px;
 }
 .request-subtitle {
-    color: #524141;
+    color: #776161;
     font-style: italic;
 }
 
@@ -2137,7 +2137,7 @@ main:has(.member-links) {
 
 .join-workshop-form label {
     margin: 0;
-    color: #616247;
+    color: #665050;
     font-weight: bold;
 }
 
@@ -2161,7 +2161,7 @@ main:has(.member-links) {
 
 /* Placeholder Colors */
 .join-workshop-form input::placeholder {
-    color: #77705f;
+    color: #616247;
     opacity: 1;
 }
 
@@ -2205,8 +2205,10 @@ main:has(.member-links) {
 
 .join-workshop-required-fields {
     margin: 0;
-    color: #616247;
+    color: #4d5738;
+
     font-size: 0.9rem;
+    font-style: italic;
 }
 
 .join-workshop-form input[type="submit"] {
@@ -2231,7 +2233,7 @@ main:has(.member-links) {
 /*---------------------------------------- About Us ----------------------------------------*/
 
 .about-page {
-    background-color: #fefcf8;
+    background-color: #fbf9f4;
 }
 
 .about-page .about-section {
@@ -2303,7 +2305,7 @@ main:has(.member-links) {
 .about-page .about-tagline {
     margin: 0;
 
-    color:  #737860;
+    color:  #5f534c;
 
     font-size: 1.18rem;
     font-style: italic;
