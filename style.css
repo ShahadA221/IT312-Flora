@@ -1922,7 +1922,7 @@ main:has(.member-links) {
 /*---------------------------------------- Request to Join ----------------------------------------*/
 
 .join-workshop-page {
-    background-color: #fdfbf5;
+    background-color: #fffbf4;
 }
 
 .join-workshop-page .join-workshop-hero {
@@ -2112,7 +2112,7 @@ main:has(.member-links) {
 /*---------------------------------------- About Us ----------------------------------------*/
 
 .about-page {
-    background-color: #fbf9f4;
+    background-color: #fcf7ed;
 }
 
 .about-page .about-section {
@@ -2127,26 +2127,6 @@ main:has(.member-links) {
 
 }
 
-.about-page .about-breadcrumb {
-    margin-bottom: 18px;
-
-    color: #665b57;
-}
-
-.about-page .about-breadcrumb a {
-    color: #665b57;
-
-
-    font-weight: bold;
-}
-
-.about-page .about-breadcrumb a:hover {
-    color: #8a3b32;
-}
-
-.about-page .about-breadcrumb span {
-    margin-left: 6px;
-}
 
 .about-page .about-card {
     display: flex;
@@ -2158,7 +2138,7 @@ main:has(.member-links) {
 
     padding: 42px;
 
-    background-color: #fff5f3;
+    background-color: #fef4ed;
 
     border: 1px solid #efd5c3;
     border-radius: 28px;
@@ -2268,7 +2248,7 @@ transition: transform 0.3s ease;
 
     box-sizing: border-box;
 
-    background-color: #f8f1e6;
+    background-color: #f7efe3;
 
     border: 1px solid #ded2c5;
     border-radius: 28px;
@@ -2597,23 +2577,7 @@ transition: transform 0.3s ease;
     padding: 30px 25px 60px;
 }
 
-.profile-breadcrumb {
-    margin-bottom: 32px;
-    color: #756c63;
-}
 
-.profile-breadcrumb a {
-    color: #6e7463;
-    text-decoration: underline;
-}
-
-.profile-breadcrumb a:hover {
-    color: #a85b55;
-}
-
-.profile-breadcrumb span {
-    margin: 0 7px;
-}
 
 .profile-heading {
     text-align: center;
