@@ -96,6 +96,7 @@ footer {
     gap: 30px;
 }
 
+footer h2,
 footer h3 {
     color: #4b1407;
     font-size: 1rem;
