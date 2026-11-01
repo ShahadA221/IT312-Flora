@@ -1075,10 +1075,11 @@ main:has(.member-links) {
   
 /*-------------------------------------------------------------------------------------------------------------alya*/
 
+
 /*======================================================================================================================================================================================tala*/
 
 
-/*==================== Shared Styles for Manager and Team Pages — tala ====================*/
+/*==================== Shared Styles — tala ====================*/
 
 /*------------------------------------------------text---------------------tala*/
 
@@ -1114,7 +1115,6 @@ main:has(.member-links) {
     font-weight: bold;
 }
 
-.manager-page .breadcrumb span,
 .team-page .breadcrumb span {
     color: #333322;
 }
@@ -1156,14 +1156,13 @@ main:has(.member-links) {
 }
 
 .manager-page .manager-card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     justify-content: center;
     gap: 8px;
     flex: 1 1 280px;
-    height: 150px;
-    min-height: 130px;
+    height: 160px;
+    min-height: 160px;
     min-width: 0;
     padding: 20px;
     border: 1px solid #6B705C;
@@ -1179,20 +1178,26 @@ main:has(.member-links) {
                 border-color 0.2s,
                 transform 0.25s,
                 box-shadow 0.25s;
+    grid-template-rows: 64px 48px;
+    align-content: center;
+    justify-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1;
 }
 
 .manager-page .manager-card h2 {
-    font-size: 1.25rem;
+    font-size: inherit;
     font-weight: inherit;
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    font-family: inherit;
 }
 
-.manager-page .manager-card p {
-    font-size: 0.9rem;
-    color: #333322;
-    margin: 0;
-}
+
 
 .manager-page .manager-icon {
     display: flex;
@@ -1207,6 +1212,7 @@ main:has(.member-links) {
     font-weight: bold;
     line-height: 1;
     color: #4b1407;
+    margin: 0;
 }
 
 .manager-page .manager-card img {
@@ -1217,6 +1223,7 @@ main:has(.member-links) {
     padding: 12px;
     border-radius: 50%;
     background-color: #D7B29D;
+    margin: 0;
 }
 
 .manager-page .manager-card:hover {
@@ -1244,38 +1251,47 @@ main:has(.member-links) {
 
 .manager-page .my-workshops table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
     background-color: #ffffff;
     text-align: center;
+    border-spacing: 0;
+    border: 1px solid #d8d9c9;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(75, 20, 7, 0.08);
 }
 
 .manager-page .my-workshops th {
-    padding: 12px 14px;
-    border: 1px solid #6B705C;
-    background-color: #A5A58D;
-    color: #4b1407;
+    padding: 18px 22px;
+    border: 0;
+    background-color: #e5e7db;
+    color: #4d563f;
+    text-align: left;
+    letter-spacing: 0.02em;
 }
 
 .manager-page .my-workshops td {
-    padding: 12px 14px;
-    border: 1px solid #6B705C;
+    padding: 16px 22px;
+    border: 0;
     vertical-align: middle;
     overflow-wrap: anywhere;
+    border-top: 1px solid #e6dfd5;
+    background-color: #fffdf9;
+    transition: background-color 0.25s ease;
 }
 
 .manager-page .my-workshops img {
     display: block;
-    width: 80px;
+    width: 100px;
     max-width: 100%;
-    height: 60px;
+    height: 72px;
     object-fit: cover;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(75, 20, 7, 0.12);
 }
 
-.manager-page .my-workshops tbody tr:hover {
-    background-color: #FFE8D6;
-}
+
 
 /*==================== PAGE 2: Manage Activity Leaders & Instructors — tala ====================*/
 
@@ -1316,41 +1332,56 @@ main:has(.member-links) {
 
 .team-page .current-team table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
     background-color: #ffffff;
     text-align: center;
+    border-spacing: 0;
+    border: 1px solid #d8d9c9;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(75, 20, 7, 0.08);
 }
 
 .team-page .current-team th {
-    padding: 12px 14px;
-    border: 1px solid #6B705C;
-    background-color: #A5A58D;
-    color: #4b1407;
+    padding: 17px 18px;
+    border: 0;
+    background-color: #e5e7db;
+    color: #4d563f;
+    font-size: 0.95rem;
 }
 
 .team-page .current-team td {
-    padding: 12px 14px;
-    border: 1px solid #6B705C;
+    padding: 18px;
+    border: 0;
     vertical-align: middle;
     overflow-wrap: anywhere;
+    border-top: 1px solid #e6dfd5;
+    background-color: #fffdf9;
+    transition: background-color 0.25s ease;
 }
 
 .team-page .current-team img {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
     object-fit: cover;
     margin: 0 auto;
     border-radius: 50%;
+    border: 3px solid #fffdf9;
+    box-shadow: 0 0 0 1px #d8d9c9,
+                0 4px 10px rgba(75, 20, 7, 0.08);
+    transition: transform 0.25s ease;
 }
 
 .team-page .current-team label {
     font-weight: bold;
+    display: inline-block;
+    color: #596046;
+    transition: transform 0.25s ease, color 0.25s ease;
+    cursor: pointer;
 }
 
-.team-page .current-team tbody tr:hover {
-    background-color: #FFE8D6;
-}
+
 
 /*------------------------------------------------Add Leader Instructor---------------------tala*/
 
@@ -1382,6 +1413,8 @@ main:has(.member-links) {
     border: 1px solid #dccbbd;
     border-radius: 20px;
     box-shadow: 0 6px 18px rgba(75, 20, 7, 0.12);
+    animation: request-rise 0.5s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 /*------------------------------------------------Team Form Columns---------------------tala*/
@@ -1405,7 +1438,7 @@ main:has(.member-links) {
 .team-page .form-field label {
     display: block;
     font-weight: bold;
-    color: #4b1407;
+    color: #616247;
     margin-bottom: 6px;
 }
 
@@ -1419,6 +1452,9 @@ main:has(.member-links) {
     color: #333322;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
+    transition: border-color 0.2s ease,
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .team-page .form-field input[type="file"] {
@@ -1437,7 +1473,7 @@ main:has(.member-links) {
 
 .team-page .add-team-member legend {
     padding: 0 6px;
-    color: #4b1407;
+    color: #616247;
     font-weight: bold;
 }
 
@@ -1539,6 +1575,8 @@ main:has(.member-links) {
     border: 1px solid #dccbbd;
     border-radius: 20px;
     box-shadow: 0 6px 18px rgba(75, 20, 7, 0.12);
+    animation: request-rise 0.5s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 /*------------------------------------------------Workshop Form Columns---------------------tala*/
@@ -1558,13 +1596,13 @@ main:has(.member-links) {
 /*------------------------------------------------Workshop Form Labels---------------------tala*/
 
 .add-workshop-page .workshop-field {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .add-workshop-page .workshop-field label {
     display: block;
-    margin-bottom: 8px;
-    color: #4b1407;
+    margin-bottom: 6px;
+    color: #616247;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -1584,6 +1622,9 @@ main:has(.member-links) {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 1.5;
+    transition: border-color 0.2s ease,
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .add-workshop-page .workshop-field textarea {
@@ -1600,18 +1641,7 @@ main:has(.member-links) {
     background-color: #fcfbf7;
 }
 
-/*------------------------------------------------Field Effects---------------------tala*/
 
-.add-workshop-page .workshop-field input:hover,
-.add-workshop-page .workshop-field textarea:hover {
-    border-color: #4b1407;
-}
-
-.add-workshop-page .workshop-field input:focus,
-.add-workshop-page .workshop-field textarea:focus {
-    background-color: #fcfbf7;
-    border-color: #4b1407;
-}
 
 /*------------------------------------------------Submit Button---------------------tala*/
 
@@ -1699,11 +1729,7 @@ main:has(.member-links) {
     min-height: 46px;
 }
 
-.add-workshop-page .workshop-field label,
-.team-page .form-field label,
-.team-page .add-team-member legend {
-    color: #616247;
-}
+
 
 .add-workshop-page .workshop-field input:focus,
 .add-workshop-page .workshop-field textarea:focus,
@@ -1723,11 +1749,7 @@ main:has(.member-links) {
 
 /*------------------------------Form effects and floral divider---------------------tala*/
 
-.team-page .add-team-member form,
-.add-workshop-page .new-workshop-form {
-    animation: request-rise 0.5s ease;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+
 
 .team-page .add-team-member form:hover,
 .add-workshop-page .new-workshop-form:hover {
@@ -1735,11 +1757,7 @@ main:has(.member-links) {
     box-shadow: 0 12px 24px rgba(75, 20, 7, 0.16);
 }
 
-.team-page .form-field input {
-    transition: border-color 0.2s ease,
-                background-color 0.2s ease,
-                box-shadow 0.2s ease;
-}
+
 
 .team-page .team-floral-divider,
 .add-workshop-page .team-floral-divider {
@@ -1792,20 +1810,8 @@ main:has(.member-links) {
     margin-bottom: 24px;
 }
 
-.add-workshop-page .workshop-field {
-    margin-bottom: 24px;
-}
 
-.add-workshop-page .workshop-field label {
-    margin-bottom: 6px;
-}
 
-.add-workshop-page .workshop-field input,
-.add-workshop-page .workshop-field textarea {
-    transition: border-color 0.2s ease,
-                background-color 0.2s ease,
-                box-shadow 0.2s ease;
-}
 
 @media (max-width: 600px) {
     .add-workshop-page .add-workshop-panel {
@@ -1822,45 +1828,6 @@ main:has(.member-links) {
 
 /*------------------------------Manager workshop table details---------------------tala*/
 
-.manager-page .manager-icon {
-    color: #4b1407;
-}
-
-.manager-page .manager-people-icon {
-    display: block;
-    width: 64px;
-    height: 64px;
-    padding: 14px;
-    border-radius: 50%;
-    background-color: #D7B29D;
-    color: #4b1407;
-}
-
-.manager-page .my-workshops table {
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1px solid #d8d9c9;
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(75, 20, 7, 0.08);
-}
-
-.manager-page .my-workshops th {
-    padding: 18px 22px;
-    border: 0;
-    background-color: #e5e7db;
-    color: #4d563f;
-    text-align: left;
-    letter-spacing: 0.02em;
-}
-
-.manager-page .my-workshops td {
-    padding: 16px 22px;
-    border: 0;
-    border-top: 1px solid #e6dfd5;
-    background-color: #fffdf9;
-    transition: background-color 0.25s ease;
-}
 
 .manager-page .my-workshops td:first-child {
     width: 150px;
@@ -1877,39 +1844,11 @@ main:has(.member-links) {
     background-color: #faf7f1;
 }
 
-.manager-page .my-workshops img {
-    width: 100px;
-    height: 72px;
-    border-radius: 14px;
-    box-shadow: 0 4px 10px rgba(75, 20, 7, 0.12);
-}
+
 
 /*------------------------------Current team table details---------------------tala*/
 
-.team-page .current-team table {
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1px solid #d8d9c9;
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(75, 20, 7, 0.08);
-}
 
-.team-page .current-team th {
-    padding: 17px 18px;
-    border: 0;
-    background-color: #e5e7db;
-    color: #4d563f;
-    font-size: 0.95rem;
-}
-
-.team-page .current-team td {
-    padding: 18px;
-    border: 0;
-    border-top: 1px solid #e6dfd5;
-    background-color: #fffdf9;
-    transition: background-color 0.25s ease;
-}
 
 .team-page .current-team tbody tr:nth-child(even) td {
     background-color: #faf7f1;
@@ -1930,21 +1869,6 @@ main:has(.member-links) {
     width: 28%;
 }
 
-.team-page .current-team img {
-    width: 64px;
-    height: 64px;
-    border: 3px solid #fffdf9;
-    box-shadow: 0 0 0 1px #d8d9c9,
-                0 4px 10px rgba(75, 20, 7, 0.08);
-    transition: transform 0.25s ease;
-}
-
-.team-page .current-team label {
-    display: inline-block;
-    color: #596046;
-    transition: transform 0.25s ease, color 0.25s ease;
-    cursor: pointer;
-}
 
 .team-page .current-team tbody tr:hover img {
     transform: translateY(-3px) scale(1.04);
@@ -1967,12 +1891,11 @@ main:has(.member-links) {
 }
 
 @media (max-width: 600px) {
-    .team-page .add-team-member,
-    .add-workshop-page .new-workshop-form {
-        margin-left: 16px;
-        margin-right: 16px;
-        padding: 24px 16px;
-    }
+    .team-page .add-team-member {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 24px 16px;
+}
 
     .team-page .add-team-member form {
         padding: 20px 14px;
@@ -1991,51 +1914,8 @@ main:has(.member-links) {
     }
 }
 
-/* Align manager dashboard cards */
-.manager-page .manager-card {
-    display: grid;
-    grid-template-rows: 64px 48px;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    gap: 8px;
-
-    height: 160px;
-    min-height: 160px;
-    padding: 20px;
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1;
-    text-align: center;
-}
-
-/* Keep card labels consistent */
-.manager-page .manager-card h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 48px;
-    margin: 0;
-
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: 1;
-}
-
-/* Keep both icons the same size */
-.manager-page .manager-icon,
-.manager-page .manager-card img {
-    width: 64px;
-    height: 64px;
-    margin: 0;
-    flex-shrink: 0;
-}
 
 /*======================================================================================================================================================================================tala*/
-
 
 /*======================================== Norah's Pages ========================================*/
 
