@@ -131,6 +131,9 @@
         <!--*************************************footer**********************************************************************-->
 
         <footer>
+
+            <p id="live-clock"></p>
+
             <section id="Social-Media">
                 <h3>Social Media</h3>
                 <ul>
@@ -150,9 +153,51 @@
                 <ul>
                     <li><strong>Phone:</strong> +966 456 789</li>
                     <li><strong>Email:</strong> info@flora.com</li>
-                    <li><strong>Location:</strong> Riyadh, Kingdom of Saudi Arabia</li>
+                    <li><strong>Location:</strong> Riyadh</li>
                 </ul>
             </section>
         </footer>
+
+<!--************************************* Back to Top button **********************************************************************-->
+
+        <button id="back-to-top" type="button" aria-label="Back to Top"> ↑ Back to Top </button>
+<script>
+    var backToTop = document.getElementById("back-to-top");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            backToTop.style.visibility = "visible";
+            backToTop.style.pointerEvents = "auto";
+        } else {
+            backToTop.style.visibility = "hidden";
+            backToTop.style.pointerEvents = "none";
+        }
+    });
+
+    backToTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+    
+<!--*************************************clock**********************************************************************-->
+    function updateClock() {
+        var now = new Date();
+
+        var time = now.toLocaleTimeString("en-US", {
+            timeZone: "Asia/Riyadh",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: true
+        });
+
+        document.getElementById("live-clock").textContent = time;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+</script>
     </body>
 </html>
