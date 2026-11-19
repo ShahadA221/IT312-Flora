@@ -1,4 +1,4 @@
-/* ===== alya: Workshops page sorting ===== */
+/*---------------------------------------------------------------------Workshops-page---------------------alya*/
 
 var grid = document.querySelector(".workshop-grid");
 var sortMenu = document.getElementById("sort");
