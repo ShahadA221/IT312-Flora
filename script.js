@@ -1,3 +1,5 @@
+/*===================================================================================================================================================================================alya*/
+
 /*---------------------------------------------------------------------Workshops-page---------------------alya*/
 
 var grid = document.querySelector(".workshop-grid");
@@ -8,7 +10,7 @@ function getCards() {
     return Array.from(grid.querySelectorAll(".workshop-card"));
 }
 
-// read the number from the price text, e.g. "150.00 SAR" becomes 150
+// read the number from the price text
 function getPrice(card) {
     return parseFloat(card.querySelector(".price").textContent);
 }
@@ -58,4 +60,4 @@ if (grid && sortMenu) {
     sortMenu.addEventListener("change", sortCards);
 }
 
-/* ===== end of alya's part ===== */
+
