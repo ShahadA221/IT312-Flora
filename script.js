@@ -1,5 +1,42 @@
 /*---------------------------------------- ...................... ----------------------------------------shahad*/
+// Theme switcher and persistence across all pages
 
+const THEME_STORAGE_KEY = "flora_active_theme";
+const THEME_TWO_CLASS = "theme-2";
+
+function applySavedTheme() {
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+    const isThemeTwo = savedTheme === "theme-2";
+
+    document.body.classList.toggle(THEME_TWO_CLASS, isThemeTwo);
+    updateThemeButtons(isThemeTwo);
+}
+
+function toggleTheme() { 
+    const isThemeTwoActive = document.body.classList.contains(THEME_TWO_CLASS);
+    const nextIsThemeTwo = !isThemeTwoActive;
+
+    document.body.classList.toggle(THEME_TWO_CLASS, nextIsThemeTwo);
+    localStorage.setItem(THEME_STORAGE_KEY, nextIsThemeTwo ? "theme-2" : "theme-1");
+    updateThemeButtons(nextIsThemeTwo);
+}
+
+function updateThemeButtons(isThemeTwo) {
+    const buttons = document.querySelectorAll("[data-theme-toggle], #themeToggleBtn");
+    buttons.forEach((btn) => {
+        btn.setAttribute("aria-pressed", String(isThemeTwo));
+        btn.textContent = isThemeTwo ? "Theme 1" : "Theme 2";
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    applySavedTheme();
+
+    const buttons = document.querySelectorAll("[data-theme-toggle], #themeToggleBtn");
+    buttons.forEach((btn) => {
+        btn.addEventListener("click", toggleTheme);
+    });
+});
 
 
 

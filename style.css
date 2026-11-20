@@ -2994,3 +2994,41 @@ transition: transform 0.3s ease;
     margin-left: clamp(35px, 5vw, 75px);
   }
 }
+
+/* ==========================================
+   PHASE 3 - THEME 2
+   ========================================== */
+
+
+/* Theme 2 styles */
+body.theme-2 {
+    background-color: #F3E6D0;
+    color: #5C4040;
+}
+
+body.theme-2 header,
+body.theme-2 nav,
+body.theme-2 footer,
+body.theme-2 .card,
+body.theme-2 section {
+    background-color: #E8DCC6;
+    color: #A63D4F;
+}
+
+body.theme-2 a {
+    color: #6B1A2B; 
+}
+
+body.theme-2 button,
+body.theme-2 .btn {
+    background-color: #7A2C3A;
+    color: #fffDf8;
+}
+
+body.theme-2 #Workshops  {
+    background-color: #E8D5B5;
+}
+
+body.theme-2 h2 {
+    color:#7A2C3A
+}
