@@ -2230,6 +2230,35 @@ main:has(.member-links) {
     background-color: #4b1407;
     transform: translateY(-2px);
 }
+/* Display Submitted Workshop Requests */
+
+.join-workshop-page #join-workshop-requests {
+    margin-top: 25px;
+}
+
+.join-workshop-page #join-workshop-requests:empty {
+    display: none;
+}
+
+.join-workshop-page #join-workshop-requests h3 {
+    text-align: center;
+    color: #6e1111;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.join-workshop-page #join-workshop-requests p {
+    background-color: #fcf8ef;
+    border: 1px solid #dccbbd;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    color: #333322;
+    line-height: 1.8;
+    box-shadow: 0 4px 12px rgba(75, 20, 7, 0.08);
+}
+
+
 /*---------------------------------------- About Us ----------------------------------------*/
 
 .about-page {
