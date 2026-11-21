@@ -19,10 +19,25 @@ header div img {
 
 header div ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    gap: 100px;}
+    gap: 100px ;}
+
+@media screen and (max-width: 1150px) {
+    header div {
+        padding: 10px 2em;
+        gap: 15px;
+    }
+
+    header div ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+}
 
 header div ul li a {
+    white-space: nowrap;
     text-decoration: none;
     color: #616247;
     font-weight: bold;
@@ -830,14 +845,17 @@ footer #live-clock {
 .to-rate-in-stars input:checked ~ .star {
     color: #ffda71;}
 
-.form-group input[type="text"] {
+.form-group textarea {
     padding: 12px 15px;
     font-size: 1rem;
+    font-family: Georgia, serif;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 6px; 
     outline: none;
     width: 100%;
     max-width: 400px;
+    min-height: 100px;
+    resize: vertical;
     box-sizing: border-box;}
 
 .photo-upload-box {
