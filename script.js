@@ -12,11 +12,11 @@ function applyTheme() {
     if (savedTheme == "theme-2") {
         document.body.className = "theme-2";
         if (btn != null) {
-            btn.innerHTML = "Theme 1";}
+            btn.innerHTML = "🎨 Theme 1";}
     } else {
         document.body.className = "";
         if (btn != null) {
-            btn.innerHTML = "Theme 2";}}}
+            btn.innerHTML = "🎨 Theme 2";}}}
 
 
 function switchTheme() {
