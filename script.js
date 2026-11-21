@@ -1,47 +1,149 @@
 /*---------------------------------------- ...................... ----------------------------------------shahad*/
-// Theme switcher and persistence across all pages
 
-const THEME_STORAGE_KEY = "flora_active_theme";
-const THEME_TWO_CLASS = "theme-2";
+//-----------------------------------------------------------------------HOME-page
 
-function applySavedTheme() {
-    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-    const isThemeTwo = savedTheme === "theme-2";
+// -------------------- Theme Switcher --------------------
+var THEME_KEY = "flora_theme";
 
-    document.body.classList.toggle(THEME_TWO_CLASS, isThemeTwo);
-    updateThemeButtons(isThemeTwo);
-}
+function applyTheme() {
+    var savedTheme = localStorage.getItem(THEME_KEY);
+    var btn = document.getElementById("themeToggleBtn");
 
-function toggleTheme() { 
-    const isThemeTwoActive = document.body.classList.contains(THEME_TWO_CLASS);
-    const nextIsThemeTwo = !isThemeTwoActive;
-
-    document.body.classList.toggle(THEME_TWO_CLASS, nextIsThemeTwo);
-    localStorage.setItem(THEME_STORAGE_KEY, nextIsThemeTwo ? "theme-2" : "theme-1");
-    updateThemeButtons(nextIsThemeTwo);
-}
-
-function updateThemeButtons(isThemeTwo) {
-    const buttons = document.querySelectorAll("[data-theme-toggle], #themeToggleBtn");
-    buttons.forEach((btn) => {
-        btn.setAttribute("aria-pressed", String(isThemeTwo));
-        btn.textContent = isThemeTwo ? "Theme 1" : "Theme 2";
-    });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    applySavedTheme();
-
-    const buttons = document.querySelectorAll("[data-theme-toggle], #themeToggleBtn");
-    buttons.forEach((btn) => {
-        btn.addEventListener("click", toggleTheme);
-    });
-});
+    if (savedTheme == "theme-2") {
+        document.body.className = "theme-2";
+        if (btn != null) {
+            btn.innerHTML = "Theme 1";}
+    } else {
+        document.body.className = "";
+        if (btn != null) {
+            btn.innerHTML = "Theme 2";}}}
 
 
+function switchTheme() {
+    var currentTheme = localStorage.getItem(THEME_KEY);
+
+    if (currentTheme == "theme-2") {
+        localStorage.setItem(THEME_KEY, "theme-1");
+    } else {
+        localStorage.setItem(THEME_KEY, "theme-2");}
+
+    applyTheme();}
+
+function startPage() {
+    applyTheme();
+    initBackToTop();
+    initEvaluationForm();
+
+    var btn = document.getElementById("themeToggleBtn");
+    if (btn != null) {
+        btn.onclick = switchTheme;}}
+
+window.onload = startPage ;
 
 
+// -------------------- Back to Top Button --------------------
+function initBackToTop() {
+    var backToTop = document.getElementById("back-to-top");
 
+    if (backToTop != null) {
+        window.onscroll = function () {
+            if (window.scrollY > 200) {
+                backToTop.style.visibility = "visible";
+                backToTop.style.pointerEvents = "auto";
+            } else {
+                backToTop.style.visibility = "hidden";
+                backToTop.style.pointerEvents = "none";}};
+
+        backToTop.onclick = function () {
+            window.scrollTo(0, 0);};}}
+
+
+// -------------------- Live Clock --------------------
+function showClock() {
+    var clock = document.getElementById("live-clock");
+    if (clock != null) {
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        var s = now.getSeconds();
+
+        if (h < 10) {h = "0" + h;}
+        if (m < 10) {m = "0" + m;}
+        if (s < 10) {s = "0" + s;}
+
+        clock.innerHTML = h + ":" + m + ":" + s;}}
+
+showClock();
+setInterval(showClock, 1000);
+
+
+//-----------------------------------------------------------------------Workshop Evaluation-page
+
+
+/* -------------------- Workshop Evaluation -------------------- */
+function initEvaluationForm() {
+    var workshopSelect = document.getElementById("Workshop-Selection");
+    var commentInput = document.getElementById("comment");
+
+    if (workshopSelect == null || commentInput == null) {
+        return;}
+
+    var form = workshopSelect.form;
+
+    form.onsubmit = function () {
+        var selectedWorkshop = workshopSelect.value;
+        var commentText = commentInput.value;
+
+        // Check workshop selection
+        if (selectedWorkshop == "") {
+            alert("Please select a workshop.");
+            workshopSelect.style.borderColor = "red";
+            return false;
+        } else {
+            workshopSelect.style.borderColor = "";}
+
+        // Check selected rating (radio buttons)
+        var stars = document.getElementsByName("rating");
+        var ratingValue = 0;
+
+        for (var i = 0; i < stars.length; i++) {
+            if (stars[i].checked) {
+                ratingValue = parseInt(stars[i].value);}}
+
+        if (ratingValue == 0) {
+            alert("Please select a rating.");
+            return false;}
+
+        // Check feedback / comment
+        if (commentText == "") {
+            alert("Please enter your comment.");
+            commentInput.style.borderColor = "red";
+            return false;
+        } else {
+            commentInput.style.borderColor = "";}
+
+        // Good rating vs apology message (4 or 5 stars = good rating)
+        if (ratingValue >= 4) {
+            alert("Thank you for your evaluation!");
+        } else {
+            alert("We apologize for your experience and appreciate your feedback.");}
+
+        // Redirect to Club Member Dashboard
+        window.location.href = "Member_Dashboard.html";
+        return false;};
+
+    var cancelButtons = document.getElementsByClassName("btn-cancel");
+    if (cancelButtons.length > 0) {
+    cancelButtons[0].onclick = function () {
+        workshopSelect.value = "";
+        workshopSelect.style.borderColor = "";
+
+        commentInput.value = "";
+        commentInput.style.borderColor = ""; 
+
+        var stars = document.getElementsByName("rating");
+        for (var i = 0; i < stars.length; i++) {
+            stars[i].checked = false;}};}}
 
 
 /*==================================================================================================================================================*/

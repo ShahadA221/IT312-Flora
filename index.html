@@ -158,50 +158,17 @@
             </section>
         </footer>
 
-<!--************************************* Back to Top button **********************************************************************-->
+<!--************************************* JS **********************************************************************-->
 
-        <button id="back-to-top" type="button" aria-label="Back to Top"> ↑ Back to Top </button>
-<script>
-    var backToTop = document.getElementById("back-to-top");
+<button id="back-to-top" type="button" aria-label="Back to Top"> ↑ Back to Top </button>
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) {
-            backToTop.style.visibility = "visible";
-            backToTop.style.pointerEvents = "auto";
-        } else {
-            backToTop.style.visibility = "hidden";
-            backToTop.style.pointerEvents = "none";
-        }
-    });
-
-    backToTop.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-    
-<!--*************************************clock**********************************************************************-->
-    function updateClock() {
-        var now = new Date();
-
-        var time = now.toLocaleTimeString("en-US", {
-            timeZone: "Asia/Riyadh",
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit",
-            hour12: true
-        });
-
-        document.getElementById("live-clock").textContent = time;
-    }
-
-    updateClock();
-    setInterval(updateClock, 1000);
-</script>
 <button type="button" id="themeToggleBtn" data-theme-toggle aria-pressed="false">
     Theme 2
 </button>
+
+
 <script src="script.js"></script>
+
+
     </body>
 </html> 
