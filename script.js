@@ -10,11 +10,11 @@ function applyTheme() {
     var btn = document.getElementById("themeToggleBtn");
 
     if (savedTheme == "theme-2") {
-        document.body.className = "theme-2";
+       document.body.classList.add("theme-2");
         if (btn != null) {
             btn.innerHTML = "🎨 Theme 1";}
     } else {
-        document.body.className = "";
+        document.body.classList.remove("theme-2");
         if (btn != null) {
             btn.innerHTML = "🎨 Theme 2";}}}
 

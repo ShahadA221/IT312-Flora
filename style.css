@@ -2309,13 +2309,31 @@ main:has(.member-links) {
 /*---------------------------------------- About Us ----------------------------------------*/
 
 .about-page {
-    background-color: #fcf7ed;
+    background-color: #fffaf8;
 }
 
+/* About Us Page Heading */
+
+.about-page .about-page-intro {
+    background-color: #FFE8D6;
+    padding: 20px 24px 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-page .about-page-intro .breadcrumb {
+    max-width: 1180px;
+    margin: 0 auto 32px;
+}
+
+.about-page .about-heading-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
 .about-page .about-section {
     max-width: 1180px;
 
-    margin: 40px auto 30px;
+    margin: 30px auto;
     padding: 0 25px;
 
     box-sizing: border-box;
@@ -2350,30 +2368,22 @@ main:has(.member-links) {
     width: 60%;
 }
 
-.about-page .about-content h1 {
+.about-page .about-main-heading {
     margin: 0 0 10px;
-
-    color: #741f18;
-
-    font-size: 3rem;
+    color: #4b1407;
+    text-align: center;
+    font-size: clamp(2.6rem, 6vw, 4rem);
+    line-height: 1.1;
 }
 
-.about-page .about-tagline {
+.about-page .about-page-intro .about-tagline {
     margin: 0;
-
-    color:  #5f534c;
-
-    font-size: 1.18rem;
+    color: #a14f24;
+    font-size: 1.2rem;
     font-style: italic;
+    line-height: 1.5;
 }
 
-.about-page .about-divider {
-    width: 250px;
-
-    margin: 20px 0 25px;
-
-    border-top: 1px solid #efd5c3;
-}
 
 .about-page .about-content h2 {
     margin: 0 0 12px;
@@ -3409,4 +3419,323 @@ body.theme-2 .manager-page .manager-card img {
     color: #6B1A2B;}
 
 /*===================================================================================================================================== NORAH PAGES Theme 2 styles */
+/* ==================== About Us - Theme 2 - Norah ==================== */
 
+/* Page Background */
+body.theme-2.about-page {
+    background-color: #FBF5EA;
+    color: #2B1A1A;
+}
+
+/* Page Heading */
+body.theme-2.about-page .about-page-intro {
+    background-color: #F3E6D0;
+}
+
+body.theme-2.about-page .about-main-heading {
+    color: #6B1A2B;
+}
+
+body.theme-2.about-page .about-tagline {
+    color: #5C4040;
+}
+
+/* Breadcrumb */
+body.theme-2.about-page .breadcrumb a {
+    color: #7A2C3A;
+    border-bottom-color: #7A2C3A;
+}
+
+/* About Card */
+body.theme-2.about-page .about-card {
+    background-color: #F6E7E1;
+    border-color: #E8DCC6;
+}
+
+body.theme-2.about-page .about-content h2 {
+    color: #6B1A2B;
+}
+
+body.theme-2.about-page .mission-text {
+    color: #2B1A1A;
+}
+
+body.theme-2.about-page .about-circle-image {
+    border-color: #E8DCC6;
+}
+
+/* Our Instructors Section */
+body.theme-2.about-page .instructors-section {
+    background-color: #EFE3C4;
+    border-color: #E8DCC6;
+}
+
+body.theme-2.about-page .instructors-section > h2 {
+    color: #6B1A2B;
+}
+
+body.theme-2.about-page .instructor-card {
+    background-color: #FFFDF8;
+    border-color: #E8DCC6;
+}
+
+body.theme-2.about-page .instructor-card img {
+    border-color: #C9A24B;
+}
+
+body.theme-2.about-page .instructor-card h3 a {
+    color: #7A2C3A;
+}
+
+body.theme-2.about-page .instructor-card h3 a:hover {
+    color: #A63D4F;
+}
+
+body.theme-2.about-page .instructor-card p {
+    color: #5C4040;
+}
+
+/* Join Our Team */
+body.theme-2.about-page .join-team-section {
+    border-color: #E8DCC6;
+}
+
+body.theme-2.about-page .join-team-content {
+    background-color: #F6E0DC;
+    border-left-color: #E0D2BA;
+}
+
+body.theme-2.about-page .join-team-content > h2 {
+    color: #6B1A2B;
+}
+
+body.theme-2.about-page .join-team-tagline {
+    color: #A63D4F;
+}
+
+body.theme-2.about-page .join-team-description {
+    color: #5C4040;
+}
+
+/* Form Fields */
+body.theme-2.about-page .join-team-field label {
+    color: #2B1A1A;
+}
+
+body.theme-2.about-page .join-team-field input,
+body.theme-2.about-page .join-team-field select {
+    background-color: #FFFDF8;
+    border-color: #E8DCC6;
+    color: #2B1A1A;
+}
+
+body.theme-2.about-page .join-team-field input:focus,
+body.theme-2.about-page .join-team-field select:focus {
+    border-color: #A63D4F;
+}
+
+body.theme-2.about-page .upload-box {
+    background-color: #FFFDF8;
+    border-color: #C9A24B;
+}
+
+/* Submit Button */
+body.theme-2.about-page .join-team-form input[type="submit"] {
+    background-color: #7A1F2E;
+    color: #FFFDF8;
+}
+
+body.theme-2.about-page .join-team-form input[type="submit"]:hover {
+    background-color: #4A0F1A;
+}
+/* ==================== Join Workshop - Theme 2 - Norah ==================== */
+
+/* Page Background */
+body.theme-2.join-workshop-page {
+    background-color: #FBF5EA;
+    color: #2B1A1A;
+}
+
+/* Page Heading */
+body.theme-2.join-workshop-page .join-workshop-hero {
+    background: #F3E6D0;
+}
+
+body.theme-2.join-workshop-page .hero-text h1 {
+    color: #6B1A2B;
+}
+
+body.theme-2.join-workshop-page .request-subtitle {
+    color: #5C4040;
+}
+
+/* Breadcrumb */
+body.theme-2.join-workshop-page .breadcrumb a {
+    color: #7A2C3A;
+    border-bottom-color: #7A2C3A;
+}
+
+body.theme-2.join-workshop-page .breadcrumb li + li::before {
+    color: #7A2C3A;
+}
+
+/* Request Section */
+body.theme-2.join-workshop-page .join-workshop-section {
+    background-color: #F6E7E1;
+    color: #2B1A1A;
+}
+
+body.theme-2.join-workshop-page .join-workshop-intro h2 {
+    color: #6B1A2B;
+}
+
+/* Floral Divider */
+body.theme-2.join-workshop-page .join-workshop-floral-divider::before,
+body.theme-2.join-workshop-page .join-workshop-floral-divider::after {
+    border-top-color: #C9A24B;
+}
+
+/* Form */
+body.theme-2.join-workshop-page .join-workshop-form {
+    background-color: #FFFDF8;
+    border-color: #E8DCC6;
+}
+
+/* Labels */
+body.theme-2.join-workshop-page .join-workshop-form label {
+    color: #2B1A1A;
+}
+
+body.theme-2.join-workshop-page .join-workshop-required-star {
+    color: #A63D4F;
+}
+
+/* Input Fields */
+body.theme-2.join-workshop-page .join-workshop-form input,
+body.theme-2.join-workshop-page .join-workshop-form select {
+    background-color: #FFFDF8;
+    border-color: #E8DCC6;
+    color: #2B1A1A;
+}
+
+/* Placeholder */
+body.theme-2.join-workshop-page .join-workshop-form input::placeholder,
+body.theme-2.join-workshop-page .join-workshop-form select:invalid {
+    color: #5C4040;
+}
+
+/* Hover and Focus */
+body.theme-2.join-workshop-page .join-workshop-form input:hover,
+body.theme-2.join-workshop-page .join-workshop-form select:hover {
+    border-color: #A63D4F;
+}
+
+body.theme-2.join-workshop-page .join-workshop-form input:focus,
+body.theme-2.join-workshop-page .join-workshop-form select:focus {
+    border-color: #A63D4F;
+    box-shadow: 0 0 0 2px rgba(166, 61, 79, 0.12);
+}
+
+/* Required Fields Note */
+body.theme-2.join-workshop-page .join-workshop-required-fields {
+    color: #5C4040;
+}
+
+/* Submit Button */
+body.theme-2.join-workshop-page .join-workshop-form input[type="submit"] {
+    background-color: #7A1F2E;
+    color: #FFFDF8;
+}
+
+body.theme-2.join-workshop-page .join-workshop-form input[type="submit"]:hover {
+    background-color: #4A0F1A;
+}
+
+/* Submitted Requests */
+body.theme-2.join-workshop-page #join-workshop-requests h3 {
+    color: #6B1A2B;
+}
+
+body.theme-2.join-workshop-page #join-workshop-requests p {
+    background-color: #FFFDF8;
+    border-color: #E8DCC6;
+    color: #2B1A1A;
+}
+/* ==================== Instructor Profiles - Theme 2 - Norah ==================== */
+
+/* Page Background */
+body.theme-2 .profile-main {
+    background-color: #FBF5EA;
+}
+
+/* Profile Heading */
+body.theme-2 .profile-heading {
+    background-color: #F3E6D0;
+    padding: 25px 20px;
+    border-radius: 18px;
+}
+
+body.theme-2 .profile-heading h1 {
+    color: #6B1A2B;
+}
+
+body.theme-2 .profile-heading h1::after {
+    background-color: #C9A24B;
+}
+
+body.theme-2 .profile-heading p {
+    color: #5C4040;
+}
+
+/* Profile Table */
+body.theme-2 .profile-table {
+    background-color: #FFFDF8;
+    border-color: #E8DCC6;
+    color: #2B1A1A;
+}
+
+/* Table Borders */
+body.theme-2 .profile-table tr + tr th,
+body.theme-2 .profile-table tr + tr td {
+    border-top-color: #E0D2BA;
+}
+
+/* Table Headings */
+body.theme-2 .profile-table th {
+    background-color: #F3E6D0;
+    color: #6B1A2B;
+}
+
+/* Table Information */
+body.theme-2 .profile-table td {
+    background-color: #FFFDF8;
+    color: #2B1A1A;
+}
+
+/* Instructor Name */
+body.theme-2 .profile-table .profile-name {
+    background-color: #F6E0DC;
+    color: #6B1A2B;
+}
+
+body.theme-2 .profile-table .profile-name:hover {
+    background-color: #F6E7E1;
+}
+
+/* Instructor Photo */
+body.theme-2 .profile-photo {
+    border-color: #C9A24B;
+}
+
+/* Table Hover */
+body.theme-2 .profile-table tr:hover td {
+    background-color: #E3A5AE;
+}
+/* Email */
+body.theme-2 .profile-email {
+    color: #7A2C3A;
+}
+
+body.theme-2 .profile-email:hover {
+    color: #A63D4F;
+}
