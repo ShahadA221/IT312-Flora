@@ -240,7 +240,347 @@ if (grid != null) {
 
 /*==================================================================================================================================================*/
 
-/*---------------------------------------- ...................... ----------------------------------------tala*/
+/*---------------------------------------- Manager pages ----------------------------------------tala*/
+
+// The key used to save the manager's workshops in localStorage
+var WORKSHOPS_KEY = "flora_manager_workshops";
+
+// Get the saved workshops from localStorage (an array of objects)
+function getSavedWorkshops() {
+    var saved = localStorage.getItem(WORKSHOPS_KEY);
+
+    if (saved == null) {
+        return [];
+    }
+    return JSON.parse(saved);
+}
+
+
+/* ==================== Manager Dashboard - tala ==================== */
+
+var myWorkshopsBody = document.getElementById("my-workshops-body");
+
+if (myWorkshopsBody != null) {
+
+    var newWorkshops = getSavedWorkshops();
+
+    // Add one row to the table for every workshop saved in localStorage
+    for (var i = 0; i < newWorkshops.length; i++) {
+        myWorkshopsBody.innerHTML = myWorkshopsBody.innerHTML +
+            "<tr>" +
+                "<td><img src='" + newWorkshops[i].image + "' alt='" + newWorkshops[i].name +
+                " workshop' width='80' height='60'></td>" +
+                "<td>" + newWorkshops[i].name + "</td>" +
+            "</tr>";
+    }
+}
+
+
+/* ==================== Add New Workshop - tala ==================== */
+
+var newWorkshopForm = document.getElementById("new-workshop-form");
+
+if (newWorkshopForm != null) {
+
+    newWorkshopForm.onsubmit = function () {
+
+        var nameInput = document.getElementById("workshop-name");
+        var descriptionInput = document.getElementById("workshop-description");
+        var priceInput = document.getElementById("workshop-price");
+        var imageInput = document.getElementById("workshop-image");
+
+        var name = nameInput.value;
+        var description = descriptionInput.value;
+        var price = priceInput.value;
+        var image = imageInput.value;
+
+        // 1) Check for empty fields
+        if (name.search(/\S/) == -1) {
+            alert("Please enter the workshop name.");
+            nameInput.focus();
+            return false;
+        }
+
+        if (description.search(/\S/) == -1) {
+            alert("Please enter the workshop description.");
+            descriptionInput.focus();
+            return false;
+        }
+
+        if (price == "") {
+            alert("Please enter the workshop price (numbers only).");
+            priceInput.focus();
+            return false;
+        }
+
+        if (image == "") {
+            alert("Please choose an image for the workshop.");
+            imageInput.focus();
+            return false;
+        }
+
+        // 2) Check the type of each input
+        // The workshop name cannot start with a number
+        if (name.search(/^\s*\d/) != -1) {
+            alert("The workshop name cannot start with a number.");
+            nameInput.focus();
+            return false;
+        }
+
+        // The price must be a number (for example 150 or 150.5)
+        if (price.search(/^\d+(\.\d+)?$/) == -1 || parseFloat(price) <= 0) {
+            alert("The price must be a number greater than 0.");
+            priceInput.focus();
+            return false;
+        }
+
+        // The image must be an image file
+        if (image.search(/\.(jpg|jpeg|png|gif)$/i) == -1) {
+            alert("The image must be a picture file (jpg, jpeg, png or gif).");
+            imageInput.focus();
+            return false;
+        }
+
+        // 3) The form is valid: save the workshop in localStorage
+        var workshop = {
+            name: name,
+            description: description,
+            price: parseFloat(price),
+            image: "photos/hero_flowers.jpg"
+        };
+
+        var allWorkshops = getSavedWorkshops();   // the old workshops
+        allWorkshops.push(workshop);              // add the new one at the end
+        localStorage.setItem(WORKSHOPS_KEY, JSON.stringify(allWorkshops));
+
+        alert("The workshop \"" + name + "\" has been added successfully!");
+
+        // 4) Clear the form
+        nameInput.value = "";
+        descriptionInput.value = "";
+        priceInput.value = "";
+        imageInput.value = "";
+
+        return false;   // stay on the page (do not send the form)
+    };
+}
+
+
+/* ==================== Manage Activity Leaders & Instructors - tala ==================== */
+
+// All available activity leaders and instructors (array of objects)
+var teamMembers = [
+    { name: "Sara Khalid",      photo: "photos/instructor-1.jpeg", role: "Instructor" },
+    { name: "Noura Abdullah",   photo: "photos/instructor-2.jpeg", role: "Instructor" },
+    { name: "Lina Abdulrahman", photo: "photos/instructor-3.jpeg", role: "Instructor" }
+];
+
+var teamList = document.getElementById("team-list");
+var deleteTeamForm = document.getElementById("delete-team-form");
+var addTeamForm = document.getElementById("add-team-form");
+
+// Show every person in the table with a checkbox
+function showTeam() {
+    var rows = "";
+
+    for (var i = 0; i < teamMembers.length; i++) {
+        rows = rows +
+            "<tr>" +
+                "<td><input type='checkbox' id='member-" + i + "' name='selected-instructors' value='" + i + "'></td>" +
+                "<td><img src='" + teamMembers[i].photo + "' alt='" + teamMembers[i].name + "' width='40' height='40'></td>" +
+                "<td><label for='member-" + i + "'>" + teamMembers[i].name + "</label></td>" +
+            "</tr>";
+    }
+
+    teamList.innerHTML = rows;
+}
+
+if (teamList != null) {
+
+    showTeam();
+
+    // ---------- Delete selected people ----------
+    deleteTeamForm.onsubmit = function () {
+
+        var boxes = document.getElementsByName("selected-instructors");
+        var selectedCount = 0;
+
+        for (var i = 0; i < boxes.length; i++) {
+            if (boxes[i].checked) {
+                selectedCount++;
+            }
+        }
+
+        if (selectedCount == 0) {
+            alert("Please select at least one activity leader or instructor to delete.");
+            return false;
+        }
+
+        var sure = confirm("Are you sure you want to delete the selected " +
+                           selectedCount + " person(s)?");
+
+        if (sure) {
+            // keep only the people that were NOT checked
+            var remaining = [];
+
+            for (var j = 0; j < boxes.length; j++) {
+                if (!boxes[j].checked) {
+                    remaining.push(teamMembers[j]);
+                }
+            }
+
+            teamMembers = remaining;
+            showTeam();
+        }
+
+        return false;
+    };
+
+    // ---------- Add a new leader / instructor ----------
+    addTeamForm.onsubmit = function () {
+
+        var nameInput = document.getElementById("instructor-name");
+        var photoInput = document.getElementById("instructor-photo");
+        var birthInput = document.getElementById("birth-date");
+        var emailInput = document.getElementById("instructor-email");
+        var expertiseInput = document.getElementById("expertise");
+        var skillsInput = document.getElementById("skills");
+        var educationInput = document.getElementById("education");
+        var roles = document.getElementsByName("role");
+
+        // 1) Check for empty fields
+        if (nameInput.value.search(/\S/) == -1) {
+            alert("Please enter the name.");
+            nameInput.focus();
+            return false;
+        }
+
+        if (photoInput.value == "") {
+            alert("Please choose a photo.");
+            photoInput.focus();
+            return false;
+        }
+
+        if (birthInput.value == "") {
+            alert("Please select the date of birth.");
+            birthInput.focus();
+            return false;
+        }
+
+        var role = "";
+        for (var i = 0; i < roles.length; i++) {
+            if (roles[i].checked) {
+                role = roles[i].value;
+            }
+        }
+
+        if (role == "") {
+            alert("Please choose a role (Activity Leader or Instructor).");
+            return false;
+        }
+
+        if (emailInput.value.search(/\S/) == -1) {
+            alert("Please enter the email.");
+            emailInput.focus();
+            return false;
+        }
+
+        if (expertiseInput.value.search(/\S/) == -1) {
+            alert("Please enter the area of expertise.");
+            expertiseInput.focus();
+            return false;
+        }
+
+        if (skillsInput.value.search(/\S/) == -1) {
+            alert("Please enter the skills.");
+            skillsInput.focus();
+            return false;
+        }
+
+        if (educationInput.value.search(/\S/) == -1) {
+            alert("Please enter the education.");
+            educationInput.focus();
+            return false;
+        }
+
+        // 2) Check the type of each input
+        // Name: letters and spaces only
+        if (nameInput.value.search(/^[A-Za-z ]+$/) == -1) {
+            alert("The name must contain letters only (no numbers or symbols).");
+            nameInput.focus();
+            return false;
+        }
+
+        // Photo: image files only
+        if (photoInput.value.search(/\.(jpg|jpeg|png|gif)$/i) == -1) {
+            alert("The photo must be an image file (jpg, jpeg, png or gif).");
+            photoInput.focus();
+            return false;
+        }
+
+        // Date of birth: must be in the past
+        var birthDate = new Date(birthInput.value);
+        var today = new Date();
+
+        if (birthDate >= today) {
+            alert("The date of birth must be in the past.");
+            birthInput.focus();
+            return false;
+        }
+
+        // Email: something@something.something
+        if (emailInput.value.search(/^[\w.\-]+@[\w\-]+(\.[A-Za-z]+)+$/) == -1) {
+            alert("Please enter a valid email (example: name@flora.com).");
+            emailInput.focus();
+            return false;
+        }
+
+        // Expertise, skills and education: must start with a letter
+        if (expertiseInput.value.search(/^[A-Za-z][A-Za-z .,&\-]*$/) == -1) {
+            alert("The area of expertise must contain letters only.");
+            expertiseInput.focus();
+            return false;
+        }
+
+        if (skillsInput.value.search(/^[A-Za-z][A-Za-z .,&\-]*$/) == -1) {
+            alert("The skills must contain letters only.");
+            skillsInput.focus();
+            return false;
+        }
+
+        if (educationInput.value.search(/^[A-Za-z][A-Za-z .,&\-]*$/) == -1) {
+            alert("The education must contain letters only.");
+            educationInput.focus();
+            return false;
+        }
+
+        // 3) The form is valid: add the new person to the list
+        var newMember = {
+            name: nameInput.value,
+            photo: "photos/Flora-part.png",
+            role: role
+        };
+
+        teamMembers.push(newMember);
+        showTeam();
+
+        alert(newMember.name + " has been added successfully!");
+
+        // 4) Clear the form
+        nameInput.value = "";
+        photoInput.value = "";
+        birthInput.value = "";
+        emailInput.value = "";
+        expertiseInput.value = "";
+        skillsInput.value = "";
+        educationInput.value = "";
+        for (var k = 0; k < roles.length; k++) {
+            roles[k].checked = false;
+        }
+
+        return false;
+    };
+}
 
 
 
