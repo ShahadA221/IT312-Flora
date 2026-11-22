@@ -3256,5 +3256,157 @@ body.theme-2 .requests tbody tr:hover td {
     color: #FBF5EA;}
 
 /*===================================================================================================================================== TALA PAGES Theme 2 styles */
+/*===================================================================================================================================== TALA PAGES Theme 2 styles */
+
+/*---------------------------------------------- shared (Manager Dashboard + Add Workshop + Manage Team) -------------------------------*/
+body.theme-2 .manager-page,
+body.theme-2 .team-page,
+body.theme-2 .add-workshop-page {
+    background-color: #FBF5EA;
+    color: #2B1A1A;}
+
+body.theme-2 .manager-page h1,
+body.theme-2 .manager-page h2,
+body.theme-2 .team-page h1,
+body.theme-2 .team-page h2,
+body.theme-2 .add-workshop-page h1,
+body.theme-2 .add-workshop-page h2 {
+    color: #6B1A2B;}
+
+body.theme-2 .manager-page .breadcrumb a,
+body.theme-2 .team-page .breadcrumb a,
+body.theme-2 .add-workshop-page .breadcrumb a {
+    color: #7A2C3A;}
+
+body.theme-2 .team-page .breadcrumb span,
+body.theme-2 .add-workshop-page .breadcrumb span,
+body.theme-2 .team-page .manage-team p,
+body.theme-2 .add-workshop-page .workshop-introduction p {
+    color: #5C4040;}
+
+/* page headings band  */
+body.theme-2 .team-page .manage-team,
+body.theme-2 .add-workshop-page .workshop-introduction {
+    background-color: #F3E6D0;}
+
+/* section titles underline */
+body.theme-2 .manager-page .my-workshops h2,
+body.theme-2 .team-page .current-team h2 {
+    border-bottom-color: #E3A5AE;}
+
+/* tables  */
+body.theme-2 .manager-page .my-workshops table,
+body.theme-2 .team-page .current-team table {
+    border-color: #E8DCC6;}
+
+body.theme-2 .manager-page .my-workshops th,
+body.theme-2 .team-page .current-team th {
+    background-color: #E3A5AE;
+    color: #4A0F1A;}
+
+body.theme-2 .manager-page .my-workshops td,
+body.theme-2 .team-page .current-team td {
+    background-color: #FFFDF8;
+    color: #5C4040;
+    border-top-color: #E8DCC6;}
+
+body.theme-2 .manager-page .my-workshops td:last-child,
+body.theme-2 .team-page .current-team label {
+    color: #6B1A2B;}
+
+body.theme-2 .manager-page .my-workshops tbody tr:nth-child(even) td,
+body.theme-2 .team-page .current-team tbody tr:nth-child(even) td {
+    background-color: #F6E7E1;}
+
+body.theme-2 .manager-page .my-workshops tbody tr:hover td,
+body.theme-2 .team-page .current-team tbody tr:hover td {
+    background-color: #7A1F2E;
+    color: #FBF5EA;}
+
+body.theme-2 .manager-page .my-workshops tbody tr:hover td:last-child,
+body.theme-2 .team-page .current-team tbody tr:hover label {
+    color: #FBF5EA;}
+
+/* form panels */
+body.theme-2 .team-page .add-team-member,
+body.theme-2 .add-workshop-page .add-workshop-panel {
+    background: linear-gradient(to bottom, #F6E7E1, #FBF5EA);}
+
+body.theme-2 .team-page .add-team-member form,
+body.theme-2 .add-workshop-page .new-workshop-form {
+    background-color: #FFFDF8;
+    border-color: #E8DCC6;}
+
+body.theme-2 .team-page .add-team-member p,
+body.theme-2 .add-workshop-page .add-workshop-panel > p {
+    color: #5C4040;}
+
+body.theme-2 .team-page .form-field label,
+body.theme-2 .team-page .add-team-member legend,
+body.theme-2 .add-workshop-page .workshop-field label {
+    color: #7A2C3A;}
+
+body.theme-2 .team-page .form-field input,
+body.theme-2 .team-page .add-team-member fieldset,
+body.theme-2 .add-workshop-page .workshop-field input,
+body.theme-2 .add-workshop-page .workshop-field textarea {
+    background-color: #FBF5EA;
+    border-color: #E0D2BA;
+    color: #2B1A1A;}
+
+body.theme-2 .team-page .form-field input:hover,
+body.theme-2 .team-page .form-field input:focus,
+body.theme-2 .add-workshop-page .workshop-field input:hover,
+body.theme-2 .add-workshop-page .workshop-field input:focus,
+body.theme-2 .add-workshop-page .workshop-field textarea:hover,
+body.theme-2 .add-workshop-page .workshop-field textarea:focus {
+    border-color: #A63D4F;
+    background-color: #FFFDF8;}
+
+body.theme-2 .team-page .team-floral-divider::before,
+body.theme-2 .team-page .team-floral-divider::after,
+body.theme-2 .add-workshop-page .team-floral-divider::before,
+body.theme-2 .add-workshop-page .team-floral-divider::after {
+    border-top-color: #E0D2BA;}
+
+body.theme-2 .team-page input[type="checkbox"],
+body.theme-2 .team-page input[type="radio"] {
+    accent-color: #7A1F2E;}
+
+/* buttons */
+body.theme-2 .team-page .current-team button,
+body.theme-2 .team-page .add-team-member button,
+body.theme-2 .add-workshop-page .workshop-submit button {
+    background-color: #7A1F2E;
+    color: #FFFDF8;}
+
+body.theme-2 .team-page .current-team button:hover,
+body.theme-2 .team-page .add-team-member button:hover,
+body.theme-2 .add-workshop-page .workshop-submit button:hover {
+    background-color: #4A0F1A;}
+
+/*---------------------------------------------- Manager Dashboard -------------------------------*/
+/* keep the flower photo, change the light layer over it to the cream hero color */
+body.theme-2 .manager-page .manager-dashboard::after {
+    background: rgba(243, 230, 208, 0.6);}
+
+body.theme-2 .manager-page .manager-dashboard p {
+    color: #6B1A2B;}
+
+/* the two link cards */
+body.theme-2 .manager-page .manager-card {
+    background-color: #FFFDF8;
+    border-color: #E8DCC6;
+    color: #6B1A2B;}
+
+body.theme-2 .manager-page .manager-card:hover {
+    background-color: #F6E0DC;
+    border-color: #E3A5AE;}
+
+body.theme-2 .manager-page .manager-icon,
+body.theme-2 .manager-page .manager-card img {
+    background-color: #E3C673;
+    color: #6B1A2B;}
+
 /*===================================================================================================================================== NORAH PAGES Theme 2 styles */
 
