@@ -2783,7 +2783,7 @@ transition: transform 0.3s ease;
 
 .profile-hero {
     height: 260px;
-    background-image: url("photos/header.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url("photos/header.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3743,6 +3743,10 @@ body.theme-2.join-workshop-page #join-workshop-requests p {
 /* Page Background */
 body.theme-2 .profile-main {
     background-color: #FBF5EA;
+}
+
+body.theme-2 .profile-hero {
+    background-image: linear-gradient(rgba(243, 230, 208, 0.6), rgba(243, 230, 208, 0.6)), url("photos/header.png");
 }
 
 /* Profile Heading */
