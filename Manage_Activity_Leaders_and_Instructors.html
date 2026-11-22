@@ -70,7 +70,7 @@
 
             <h2>Current Leaders &amp; Instructors</h2>
 
-            <form method="get">
+            <form method="get" id="delete-team-form">
 
                 <table>
 
@@ -82,7 +82,7 @@
                         </tr>
                     </thead>
 
-                    <tbody>
+                     <tbody id="team-list">
 
                         <tr>
                             <td>
@@ -174,7 +174,10 @@
                 leader or instructor to your club.
             </p>
 
-            <form method="post" enctype="multipart/form-data">
+                 <form method="post"
+                  enctype="multipart/form-data"
+                  id="add-team-form"
+                  novalidate>
 
                 <div class="form-columns">
 
@@ -349,7 +352,9 @@
 
         </section>
 
-    </footer>
+        </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
