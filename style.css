@@ -2787,6 +2787,7 @@ transition: transform 0.3s ease;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flow-root;
 }
 
 .profile-section {
