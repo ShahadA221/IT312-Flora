@@ -733,6 +733,7 @@ footer #live-clock {
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.7;
+    padding: 0 20px;
     color: #444;}
 
 .styling-instructions img {
@@ -3069,7 +3070,7 @@ transition: transform 0.3s ease;
 
 
 /* Theme 2 styles */
-/*---------------------------------------------------------------------------------------------- header + footer ----------*/
+/*---------------------------------------------------------------------------------------------- header + Breadcrumb + footer ----------*/
 
 body.theme-2 header div,
 body.theme-2 header a ,
@@ -3080,6 +3081,16 @@ body.theme-2 footer #contact-us strong ,
 body.theme-2 footer #Social-Media a {
     background-color: #E8DCC6;
     color: #5C4040;}
+
+body.theme-2 .breadcrumb a {
+    color: #A63D4F;
+    border-bottom: 2px solid #A63D4F;}
+body.theme-2 .breadcrumb a:hover {
+    color: #7A2C3A;
+    border-bottom: 2px solid #7A2C3A;}
+
+body.theme-2 .breadcrumb li + li::before {
+    color: #A63D4F;}
 
 /*===================================================================================================================================== SHAHAD PAGES Theme 2 styles */
 /*---------------------------------------------------------------------------------------------- HOME PAGE ----------*/
