@@ -13,9 +13,14 @@ header div {
     align-items: center;
     justify-content: space-between;}
 
-header div img {
-    height: 79px;
-    width: auto;}
+header .Flora-logo-img {
+    display: inline-block;
+    width: 160px;
+    height: 80px;
+    background-image: url("photos/Flora_logo.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;}
 
 header div ul {
     display: flex;
@@ -170,12 +175,16 @@ footer > div {
     padding: 0;
 }
 
-footer > div img {
-    display: block;
+footer > div .footer-logo-img {
     width: 120px;
+    height: 60px;
     max-width: 100%;
-    height: auto;
     margin: 0 auto 12px;
+
+    background-image: url("photos/Flora_logo.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 footer > div p {
@@ -291,8 +300,9 @@ footer #contact-us li:nth-child(3)::before {
         grid-area: logo;
     }
 
-    footer > div img {
+    footer > div .footer-logo {
         width: 100px;
+        height: 50px;
     }
 
     footer h3 {
@@ -3079,8 +3089,14 @@ body.theme-2 footer h3 ,
 body.theme-2 footer a ,
 body.theme-2 footer #contact-us strong ,
 body.theme-2 footer #Social-Media a {
-    background-color: #E8DCC6;
+    background-color: #EAE1CF;
     color: #5C4040;}
+
+body.theme-2 .Flora-logo-img {
+    background-image: url("photos/Flora_logo_Theme2.jpeg");}
+
+body.theme-2 .footer-logo-img {
+    background-image: url("photos/Flora_logo_Theme2.jpeg");}
 
 body.theme-2 .breadcrumb a {
     color: #A63D4F;
@@ -3192,8 +3208,18 @@ body.theme-2 .form-section .btn-submit {
 
 /*===================================================================================================================================== ALYA PAGES Theme 2 styles */
 
-/*---------------------------------------------- shared (Workshops + Member Dashboard) --------------------------------------*/
+/*---------------------------------------------- shared (Workshops + Member Dashboard) ------------------------------------*/
 
+/* breadcrumb: rose accent (text, arrows and underline) */
+body.theme-2 main:has(.workshop-grid) .hero .breadcrumb a,
+body.theme-2 main:has(.workshop-grid) .hero .breadcrumb li + li::before,
+body.theme-2 main:has(.member-links) .hero .breadcrumb a,
+body.theme-2 main:has(.member-links) .hero .breadcrumb li + li::before {
+    color: #A63D4F;}
+
+body.theme-2 main:has(.workshop-grid) .hero .breadcrumb a,
+body.theme-2 main:has(.member-links) .hero .breadcrumb a {
+    border-bottom-color: #A63D4F;}
 
 body.theme-2 main:has(.workshop-grid) .hero,
 body.theme-2 main:has(.member-links) .hero,
@@ -3209,7 +3235,7 @@ body.theme-2 main:has(.workshop-grid) .hero {
 body.theme-2 main:has(.workshop-grid) .hero h1 {
     color: #6B1A2B;}
 
-/*---------------------------------------------- Workshops page --------------------------------------*/
+/*---------------------------------------------- Workshops page ------------------------------------*/
 body.theme-2 .sort-bar select {
     color: #2B1A1A;}
 
@@ -3230,7 +3256,7 @@ body.theme-2 .join-btn:hover {
     background-color: #C9A24B;
     color: #4A0F1A;}
 
-/*---------------------------------------------- Member Dashboard --------------------------------------*/
+/*---------------------------------------------- Member Dashboard (same look as Tala's Manager Dashboard) -----------------------*/
 body.theme-2 main:has(.member-links) {
     background-color: #FBF5EA;}
 
