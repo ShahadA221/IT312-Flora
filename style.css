@@ -300,7 +300,7 @@ footer #contact-us li:nth-child(3)::before {
         grid-area: logo;
     }
 
-    footer > div .footer-logo {
+    footer > div .footer-logo-img {
         width: 100px;
         height: 50px;
     }
@@ -808,7 +808,7 @@ footer #live-clock {
 .form-section h1 {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #111;
+    color: #4b1407;
     margin-bottom: 30px;
     font-family: Georgia, serif;}
 
@@ -2778,8 +2778,8 @@ transition: transform 0.3s ease;
 
 .profile-main {
     background-color: #fcfbf7;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 
 .profile-hero {
     height: 260px;
@@ -2998,6 +2998,32 @@ transition: transform 0.3s ease;
     #Intro p {
         font-size: 1.1rem;
     }
+	    /* Flower Of The Month */
+    #Flower-Of-The-Month {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+
+    #Flower-Of-The-Month .flower-content {
+        padding: 30px 20px;
+        margin: 0 auto;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #Flower-Of-The-Month h2 {
+        font-size: 2.4rem;
+    }
+
+    #Flower-Of-The-Month p {
+        font-size: 1.3rem;
+    }
+
+    #Flower-Of-The-Month img {
+        width: 100%;
+        height: 300px;
+    }
 }
 
 
@@ -3206,6 +3232,15 @@ body.theme-2 .form-section .btn-submit:hover {
 body.theme-2 .form-section .btn-submit {
     background-color: #4A0F1A;}  
 
+/* Workshop Evaluation - Theme 2: empty stars light, chosen stars gold */
+body.theme-2 .form-section .to-rate-in-stars .star {
+    color: #E0D2BA;}
+
+body.theme-2 .form-section .to-rate-in-stars .star:hover,
+body.theme-2 .form-section .to-rate-in-stars .star:hover ~ .star,
+body.theme-2 .form-section .to-rate-in-stars input:checked ~ .star {
+    color: #A63D4F;}
+
 /*===================================================================================================================================== ALYA PAGES Theme 2 styles */
 
 /*---------------------------------------------- shared (Workshops + Member Dashboard) ------------------------------------*/
@@ -3230,7 +3265,10 @@ body.theme-2 .sort-label {
 
 /* Workshops hero: light pink band with burgundy title */
 body.theme-2 main:has(.workshop-grid) .hero {
-    background-color: #F6E0DC;}
+    background-color: #F3E6D0;}
+
+body.theme-2 main:has(.workshop-grid) {
+    background-color: #FBF5EA;}
 
 body.theme-2 main:has(.workshop-grid) .hero h1 {
     color: #6B1A2B;}
@@ -3325,7 +3363,7 @@ body.theme-2 .add-workshop-page h2 {
 body.theme-2 .manager-page .breadcrumb a,
 body.theme-2 .team-page .breadcrumb a,
 body.theme-2 .add-workshop-page .breadcrumb a {
-    color: #7A2C3A;}
+    color: #A63D4F;}
 
 body.theme-2 .team-page .breadcrumb span,
 body.theme-2 .add-workshop-page .breadcrumb span,
@@ -3481,8 +3519,8 @@ body.theme-2.about-page .about-tagline {
 
 /* Breadcrumb */
 body.theme-2.about-page .breadcrumb a {
-    color: #7A2C3A;
-    border-bottom-color: #7A2C3A;
+    color: #A63D4F;
+    border-bottom-color: #A63D4F;
 }
 
 /* About Card */
@@ -3610,12 +3648,12 @@ body.theme-2.join-workshop-page .request-subtitle {
 
 /* Breadcrumb */
 body.theme-2.join-workshop-page .breadcrumb a {
-    color: #7A2C3A;
-    border-bottom-color: #7A2C3A;
+    color: #A63D4F;
+    border-bottom-color: #A63D4F;
 }
 
 body.theme-2.join-workshop-page .breadcrumb li + li::before {
-    color: #7A2C3A;
+    color: #A63D4F;
 }
 
 /* Request Section */
