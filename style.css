@@ -3192,18 +3192,8 @@ body.theme-2 .form-section .btn-submit {
 
 /*===================================================================================================================================== ALYA PAGES Theme 2 styles */
 
-/*---------------------------------------------- shared (Workshops + Member Dashboard) ------------------------------------*/
+/*---------------------------------------------- shared (Workshops + Member Dashboard) --------------------------------------*/
 
-/* breadcrumb: rose accent (text, arrows and underline) */
-body.theme-2 main:has(.workshop-grid) .hero .breadcrumb a,
-body.theme-2 main:has(.workshop-grid) .hero .breadcrumb li + li::before,
-body.theme-2 main:has(.member-links) .hero .breadcrumb a,
-body.theme-2 main:has(.member-links) .hero .breadcrumb li + li::before {
-    color: #A63D4F;}
-
-body.theme-2 main:has(.workshop-grid) .hero .breadcrumb a,
-body.theme-2 main:has(.member-links) .hero .breadcrumb a {
-    border-bottom-color: #A63D4F;}
 
 body.theme-2 main:has(.workshop-grid) .hero,
 body.theme-2 main:has(.member-links) .hero,
@@ -3219,7 +3209,7 @@ body.theme-2 main:has(.workshop-grid) .hero {
 body.theme-2 main:has(.workshop-grid) .hero h1 {
     color: #6B1A2B;}
 
-/*---------------------------------------------- Workshops page ------------------------------------*/
+/*---------------------------------------------- Workshops page --------------------------------------*/
 body.theme-2 .sort-bar select {
     color: #2B1A1A;}
 
@@ -3240,7 +3230,7 @@ body.theme-2 .join-btn:hover {
     background-color: #C9A24B;
     color: #4A0F1A;}
 
-/*---------------------------------------------- Member Dashboard (same look as Tala's Manager Dashboard) -----------------------*/
+/*---------------------------------------------- Member Dashboard --------------------------------------*/
 body.theme-2 main:has(.member-links) {
     background-color: #FBF5EA;}
 
