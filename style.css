@@ -3246,17 +3246,6 @@ body.theme-2 .form-section .to-rate-in-stars input:checked ~ .star {
 
 /*---------------------------------------------- shared (Workshops + Member Dashboard) ------------------------------------*/
 
-/* breadcrumb: rose accent (text, arrows and underline) */
-body.theme-2 main:has(.workshop-grid) .hero .breadcrumb a,
-body.theme-2 main:has(.workshop-grid) .hero .breadcrumb li + li::before,
-body.theme-2 main:has(.member-links) .hero .breadcrumb a,
-body.theme-2 main:has(.member-links) .hero .breadcrumb li + li::before {
-    color: #A63D4F;}
-
-body.theme-2 main:has(.workshop-grid) .hero .breadcrumb a,
-body.theme-2 main:has(.member-links) .hero .breadcrumb a {
-    border-bottom-color: #A63D4F;}
-
 body.theme-2 main:has(.workshop-grid) .hero,
 body.theme-2 main:has(.member-links) .hero,
 body.theme-2 .requests h2,
