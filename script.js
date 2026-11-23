@@ -328,8 +328,8 @@ if (newWorkshopForm != null) {
         }
 
         // The price must be a number
-        if (price.search(/^\d+(\.\d+)?$/) == -1 || parseFloat(price) <= 0) {
-            alert("The price must be a number greater than 0.");
+        if (price.search(/^\d+(\.\d+)?$/) == -1) {
+            alert("Enter a valid price. Use 0 for a free workshop.");
             priceInput.focus();
             return false;
         }
