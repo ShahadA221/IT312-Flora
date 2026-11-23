@@ -1728,8 +1728,7 @@ main:has(.member-links) {
 /*------------------------------------------------Image  Upload---------------------tala*/
 
 .add-workshop-page .workshop-field input[type="file"] {
-    min-height: 190px;
-    padding: 65px 12px;
+    padding: 18px 12px;
     border: 2px dashed #dccbbd;
     background-color: #fcfbf7;
 }
