@@ -282,8 +282,8 @@ var newWorkshopForm = document.getElementById("new-workshop-form");
 
 if (newWorkshopForm != null) {
 
-    newWorkshopForm.onsubmit = function () {
-
+    newWorkshopForm.onsubmit = async function (event) {
+    event.preventDefault();
         var nameInput = document.getElementById("workshop-name");
         var descriptionInput = document.getElementById("workshop-description");
         var priceInput = document.getElementById("workshop-price");
@@ -346,7 +346,14 @@ if (newWorkshopForm != null) {
             name: name,
             description: description,
             price: parseFloat(price),
-            image: "photos/hero_flowers.jpg"
+            image: await new Promise(function (resolve) {
+                   var reader = new FileReader();
+                   reader.onload = function () {
+                   resolve(reader.result); };
+
+                 
+         reader.readAsDataURL(imageInput.files[0]);
+        })
         };
 
         var allWorkshops = getSavedWorkshops();   // the old workshops
