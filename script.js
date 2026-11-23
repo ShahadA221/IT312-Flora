@@ -327,7 +327,7 @@ if (newWorkshopForm != null) {
             return false;
         }
 
-        // The price must be a number (for example 150 or 150.5)
+        // The price must be a number
         if (price.search(/^\d+(\.\d+)?$/) == -1 || parseFloat(price) <= 0) {
             alert("The price must be a number greater than 0.");
             priceInput.focus();
