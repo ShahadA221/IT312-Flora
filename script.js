@@ -564,7 +564,7 @@ if (teamList != null) {
         // 3) The form is valid: add the new person to the list
         var newMember = {
             name: nameInput.value,
-            photo: "photos/Flora-part.png",
+            photo: URL.createObjectURL(photoInput.files[0]),
             role: role
         };
 
