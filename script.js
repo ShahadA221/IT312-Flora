@@ -115,7 +115,7 @@ function initEvaluationForm() {
             return false;}
 
         // Check feedback / comment
-        if (commentText == "") {
+        if (commentText.trim() == "") {
             alert("Please enter your comment.");
             commentInput.style.borderColor = "red";
             return false;
